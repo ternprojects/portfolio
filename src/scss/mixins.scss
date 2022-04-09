@@ -1,0 +1,14 @@
+// @mixin font($ff: "Montserrat", $fs: 18px, $fw: 400, $fc: $first-color, $lh: 22px, $ls: 0px) {
+// 	font-family: $ff;
+// 	font-size: $fs;
+// 	font-weight: $fw;
+// 	color: $fc;
+// 	line-height: $lh;
+// 	letter-spacing: $ls;
+// }
+
+@mixin flex($d: flex, $jc: space-between, $ai: center) {
+	display: $d;
+	justify-content: $jc;
+	align-items: $ai;
+}

@@ -1,0 +1,37 @@
+//Service
+@import 'normalize';
+@import 'fonts';
+//@import 'variables';
+@import 'mixins';
+
+//Pages
+@import 'pnf';
+@import 'header';
+//@import 'intro';
+//@import "footer.scss";
+
+//Adaptive
+//@import "media/s.scss";
+// @import "media/xs";
+// @import "media/sm";
+// @import "media/md";
+// @import "media/lg";
+// @import "media/xl";
+// @import "media/xxl";
+
+//Example
+// body {
+// 	font-family: CormorantUpright;
+// 	font-size: 50px;
+// 	span {
+// 		color: red;
+// 	}
+// }
+
+//Header settings
+.header {
+	padding: 1.2rem 0; //1.2 rem = 18px
+	.header__inner {
+		@include flex;
+	}
+}

@@ -1,0 +1,23 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="en">
+	@@include('html/head-404.html',{ "title":"Error: 404" })
+	<!-- Отображаемое тело страницы -->
+	<body class="body-404">
+		<main>
+			<div class="container-404">
+				<h1 class="h1-404">Error: "404"</h1>
+				<h2 class="h2-404" lang="en">Page not found :(</h2>
+				<h2 class="h2-404" lang="en">
+					In 5 seconds<br />
+					you will be redirected <br />
+					<a class="link-404" href="index.html">to main page</a>
+				</h2>
+			</div>
+			<!-- Определение картинки должно быть в одну строку, иначе крашится режим билда при сбороке -->
+			<img class="image-404" src="@img/404.jpg"	width="768"	alt="Page not found" />
+		</main>
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
