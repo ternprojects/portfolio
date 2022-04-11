@@ -28,8 +28,6 @@ export const html = () => {
 			.pipe(app.plugins.replace(/@img\//g, 'img/'))
 			.pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
 
-			
-
 			.pipe(
 				app.plugins.if(
 					app.isBuild,
