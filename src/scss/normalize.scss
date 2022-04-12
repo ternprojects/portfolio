@@ -11,7 +11,7 @@
 
 a {
 	text-decoration: none;
-	color: $white;
+	// color: $white;
 }
 
 ul,
@@ -48,15 +48,15 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-// .wrapper {
-// 	min-height: 100%;
-// 	overflow: hidden;
-// }
-
+//My settings
 ._container {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding-left: 1rem;
 	padding-right: 1rem;
+}
+
+.text-center {
+	text-align: center;
 }
