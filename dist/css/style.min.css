@@ -211,7 +211,6 @@ p {
   display: inline-block;
   vertical-align: top;
   padding: 1.05em 1.7em;
-  min-width: 170px;
   border: 1px solid #6a696b;
   border-radius: 1.8em;
   background: none;
@@ -257,7 +256,6 @@ p {
   display: inline-block;
   vertical-align: top;
   padding: 1.05em 1.7em;
-  min-width: 170px;
   border: 1px solid #6a696b;
   border-radius: 1.8em;
   background: none;
@@ -270,6 +268,7 @@ p {
   transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
   /*Modificators*/
   padding: 0.7em 1.1em;
+  min-width: 0;
   font-size: 0.94rem;
   border-width: 2px;
   font-weight: 700;
@@ -359,7 +358,6 @@ p {
   display: inline-block;
   vertical-align: top;
   padding: 1.05em 1.7em;
-  min-width: 170px;
   border: 1px solid #6a696b;
   border-radius: 1.8em;
   background: none;
@@ -485,7 +483,6 @@ p {
   display: inline-block;
   vertical-align: top;
   padding: 1.05em 1.7em;
-  min-width: 170px;
   border: 1px solid #6a696b;
   border-radius: 1.8em;
   background: none;
@@ -497,6 +494,7 @@ p {
   text-align: center;
   transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
   padding: 0.7em 1.1em;
+  min-width: 0;
   font-size: 0.94rem;
   border-width: 2px;
   font-weight: 700;
@@ -585,6 +583,59 @@ p {
 }
 .news__link:hover {
   text-decoration: none;
+}
+
+.footer {
+  padding: 1rem 0;
+  background-color: #2b2a2c;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__credits {
+  display: flex;
+  align-items: center;
+}
+.footer__copyright {
+  padding-right: 0.8rem;
+  margin-right: 1rem;
+  color: #bbbbcc;
+  font-size: 0.94rem;
+  border-right: 1px solid rgba(106, 105, 107, 0.35);
+}
+.footer__social {
+  display: flex;
+  align-items: center;
+}
+.footer__social a {
+  margin-right: 1.2rem;
+  width: 20px;
+  height: 20px;
+}
+.footer__nav {
+  display: flex;
+  align-items: center;
+  font-size: 0.94rem;
+}
+.footer__nav-link {
+  margin-left: 1.5rem;
+  color: #bbbbcc;
+}
+.footer__nav-link:hover {
+  text-decoration: underline;
+}
+.footer__nav-link--btn {
+  padding: 0.5rem 1.4rem;
+  border-radius: 20px;
+  border: 1px solid #8d8d8e;
+  line-height: 1.1;
+}
+.footer__nav-link--btn:hover {
+  text-decoration: none;
+  background-color: #bbbbcc;
+  border-color: #bbbbcc;
+  color: #2b2a2c;
 }
 
 .header {

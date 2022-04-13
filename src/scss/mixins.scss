@@ -17,7 +17,6 @@
 	display: inline-block;
 	vertical-align: top;
 	padding: 1.05em 1.7em;
-	min-width: 170px;
 	border: 1px solid $gray;
 	border-radius: 1.8em;
 	background: none;
@@ -42,6 +41,7 @@
 
 @mixin btn--sm() {
 	padding: 0.7em 1.1em;
+	min-width: 0;
 	font-size: 0.94rem;
 	border-width: 2px;
 	font-weight: 700;
