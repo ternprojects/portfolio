@@ -45,7 +45,7 @@
 	}
 	&__rating {
 		display: flex;
-		font-style: center;
+		justify-content: center;
 		.reviews__star {
 			width: 13px;
 			height: 13px;
