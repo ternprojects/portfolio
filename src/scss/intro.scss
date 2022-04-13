@@ -28,11 +28,8 @@
 	&__photo {
 		position: absolute;
 		right: 65px;
-		bottom: 0;
-		// For qa-picture
-		// bottom: 50px;
-		// right: 65px;
-		//transform: rotate(15deg);
+		bottom: -1px;
+		z-index: 1;
 		width: 350px;
 		height: auto;
 	}

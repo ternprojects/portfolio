@@ -1,5 +1,5 @@
 .works {
-	padding: 2.8rem 0;
+	margin: 2.8rem 0;
 	&__nav {
 		display: flex;
 		justify-content: center;
@@ -8,8 +8,8 @@
 	&__nav-link {
 		margin: 0 1.2rem;
 		font-size: 0.8rem;
-		color: rgba($black, 0.7);
-		transition: box-shadow 0.2s linear;
+		color: rgba($black, .7);
+		transition: box-shadow .2s linear;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -37,13 +37,13 @@
 				height: auto;
 			}
 			&__content {
-				padding: 1rem 0.8rem;
+				padding: 1rem .8rem;
 			}
 			&__cat {
-				font-size: 0.8rem;
+				font-size: .8rem;
 				color: $black;
 				text-transform: uppercase;
-				margin-bottom: 0.5rem;
+				margin-bottom: .5rem;
 			}
 			&__title {
 				display: flex;
@@ -59,7 +59,7 @@
 		/*Modificators*/
 		&--sm {
 			padding: .7em 1.1em;
-			font-size: 0.94rem;
+			font-size: .94rem;
 			font-weight: 700px;
 			border-width: 2px;
 		}
