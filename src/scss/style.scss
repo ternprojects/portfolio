@@ -6,12 +6,13 @@
 
 //Pages
 @import 'header';
-@import 'intro';
-@import 'works';
-@import 'about';
-@import 'reviews';
-@import 'news';
+@import 'screens/intro';
+@import 'screens/works';
+@import 'screens/about';
+@import 'screens/reviews';
+@import 'screens/news';
 @import 'footer.scss';
+@import 'modals/modal.scss';
 
 //Adaptive
 //@import "media/s.scss";
@@ -21,15 +22,6 @@
 // @import "media/lg";
 // @import "media/xl";
 // @import "media/xxl";
-
-//Example
-// body {
-// 	font-family: CormorantUpright;
-// 	font-size: 50px;
-// 	span {
-// 		color: red;
-// 	}
-// }
 
 //Header settings
 .header {

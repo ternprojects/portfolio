@@ -3,29 +3,23 @@
 <!-- Оболочка документа, указываем язык содержимого -->
 <html lang="en">
 @@include('html/head.html',{ "title":"QA Service" })
+
 <!-- Отображаемое тело страницы -->
 
-<body>
+<body class="no-scroll">
 
 	@@include('html/header.html',{})
-	@@include('html/intro.html',{})
-	@@include('html/works.html',{})
-	@@include('html/about.html',{})
-	@@include('html/reviews.html',{})
-	@@include('html/news.html',{})
+	@@include('html/screens/intro.html',{})
+	@@include('html/screens/works.html',{})
+	@@include('html/screens/about.html',{})
+	@@include('html/screens/reviews.html',{})
+	@@include('html/screens/news.html',{})
+	@@include('html/modals/modal.html',{})
 
-	<!--
-		@@include('html/screens/first_screen.html',{})
-		@@include('html/screens/second_screen.html',{})
-		@@include('html/screens/third_screen.html',{})
-	-->
-
-	<main>
-		<!-- <img src="@img/404.jpg" width="150" alt="image" /> -->
-	</main>
+	<main></main>
 
 	@@include('html/footer.html',{})
-	
+
 	<script src="js/app.min.js"></script>
 </body>
 
