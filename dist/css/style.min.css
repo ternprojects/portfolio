@@ -652,13 +652,13 @@ p {
   top: 0;
   left: 0;
   z-index: 1000;
+  overflow: auto;
 }
 .modal__dialog {
   width: 100%;
   max-width: 1200px;
   margin: auto;
   position: relative;
-  overflow: auto;
   background-color: #fff;
 }
 .modal__close {
