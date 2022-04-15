@@ -46,3 +46,8 @@
 	border-width: 2px;
 	font-weight: 700;
 }
+
+@mixin btn--thin() {
+	min-width: 145px;
+	font-size: .8rem;
+}

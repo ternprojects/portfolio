@@ -773,6 +773,164 @@ p {
   right: 75px;
 }
 
+.modal__content {
+  padding: 5rem 1rem;
+  text-align: center;
+}
+.modal__title {
+  margin-bottom: 3.6rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #2b2a2c;
+  font-weight: 700;
+}
+.modal .btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1.05em 1.7em;
+  border: 1px solid #6a696b;
+  border-radius: 1.8em;
+  background: none;
+  font-family: inherit;
+  font-size: 1.06rem;
+  line-height: 1.1;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
+  min-width: 145px;
+  font-size: 0.8rem;
+}
+.modal .btn:focus {
+  outline: none;
+}
+.modal .btn:hover {
+  background-color: #2b2a2c;
+  color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
+  border-color: #2b2a2c;
+}
+.modal .btn + .btn {
+  margin-left: 1rem;
+}
+.modal .timeline {
+  display: flex;
+  margin: 4.2rem auto;
+  width: 100%;
+  max-width: 768px;
+  position: relative;
+}
+.modal .timeline:before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #2b2a2c;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+}
+.modal .timeline__col {
+  width: 50%;
+}
+.modal .timeline__col--left {
+  padding-right: 3.2rem;
+  text-align: right;
+}
+.modal .timeline__col--right {
+  padding-left: 3.2rem;
+  text-align: left;
+}
+.modal .timeline__title {
+  margin-bottom: 2.6rem;
+  font-size: 1.2rem;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.modal .timeline__title--margin {
+  margin-top: 2.6rem;
+}
+.modal .timeline__item {
+  margin-bottom: 2.6rem;
+}
+.modal .timeline__item:last-child {
+  margin-bottom: 0;
+}
+.modal .timeline__date {
+  display: block;
+  margin-bottom: 0.8rem;
+  text-decoration: underline;
+  font-size: 0.94rem;
+  color: #2b2a2c;
+}
+.modal .timeline__subtitle {
+  margin-bottom: 0.2rem;
+  font-size: 1.06rem;
+  color: #2b2a2c;
+  font-weight: 700;
+}
+.modal .timeline__position {
+  font-size: 0.94rem;
+  color: #2b2a2c;
+  font-style: italic;
+}
+.modal .timeline__text {
+  margin-top: 0.8rem;
+  font-size: 0.8rem;
+  color: #6a696b;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.modal .timeline .progress-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.modal .timeline .progress-bar__right {
+  padding-left: 1.2rem;
+}
+.modal .timeline .progress-bar__item {
+  width: 139px;
+  height: 6px;
+  background-color: #efefef;
+}
+.modal .timeline .progress-bar__title {
+  font-size: 0.94rem;
+  font-weight: 300;
+}
+.modal .timeline .progress-bar__progress {
+  height: 100%;
+  background-color: #6a696b;
+  transition: width 0.2s linear;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1.05em 1.7em;
+  border: 1px solid #6a696b;
+  border-radius: 1.8em;
+  background: none;
+  font-family: inherit;
+  font-size: 1.06rem;
+  line-height: 1.1;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:hover {
+  background-color: #2b2a2c;
+  color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
+  border-color: #2b2a2c;
+}
+
 .header {
   padding: 1.2rem 0;
 }
