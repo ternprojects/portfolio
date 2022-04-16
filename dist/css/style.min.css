@@ -61,6 +61,10 @@ p {
   padding-right: 1rem;
 }
 
+.hide {
+  display: none;
+}
+
 @font-face {
   font-family: Montserrat;
   font-display: swap;
