@@ -61,10 +61,6 @@ p {
   padding-right: 1rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
 @font-face {
   font-family: Montserrat;
   font-display: swap;
@@ -928,6 +924,112 @@ p {
   height: 100%;
   background-color: #6a696b;
   transition: width 0.2s linear;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.modal__dialog--sm {
+  max-width: 900px;
+}
+.modal__title {
+  text-align: left;
+}
+.modal__subtitle {
+  text-transform: uppercase;
+  font-size: 1.06rem;
+  color: #2b2a2c;
+  font-weight: 400;
+}
+
+.contact {
+  background: url("https://via.placeholder.com/480x700") right center no-repeat;
+  display: flex;
+}
+.contact__left {
+  width: 47%;
+  padding: 2rem;
+}
+.contact__info {
+  margin: 2rem 0 3rem;
+  font-size: 0.94rem;
+  color: #2b2a2c;
+  font-weight: 300;
+}
+.contact__info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.contact__info-item:last-child {
+  margin-bottom: 0;
+}
+.contact__info-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.75rem;
+}
+.contact .form__group {
+  margin-bottom: 1.8rem;
+}
+.contact .form__label {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  font-size: 0.8rem;
+  color: #2b2a2c;
+  font-weight: 700;
+}
+.contact .form__input, .contact .form__textarea {
+  display: block;
+  width: 100%;
+  padding: 1.3rem 1.8rem;
+  font-family: inherit;
+  border: 1px solid rgba(112, 112, 112, 0.3);
+  border-radius: 1.8rem;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  font-weight: 300;
+  transition: border-color 0.2s linear;
+}
+.contact .form__input::placeholder, .contact .form__textarea::placeholder {
+  color: #2b2a2c;
+}
+.contact .form__input:focus, .contact .form__textarea:focus {
+  outline: none;
+  background-color: #ccc;
+  border-color: #000;
+}
+.contact .form__input:focus::placeholder, .contact .form__textarea:focus::placeholder {
+  color: #2b2a2c;
+}
+.contact .form__textarea {
+  height: 200px;
+  resize: none;
+}
+.contact .form .btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1.05em 1.7em;
+  border: 1px solid #6a696b;
+  border-radius: 1.8em;
+  background: none;
+  font-family: inherit;
+  font-size: 1.06rem;
+  line-height: 1.1;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
+}
+.contact .form .btn:focus {
+  outline: none;
+}
+.contact .form .btn:hover {
+  background-color: #2b2a2c;
+  color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
+  border-color: #2b2a2c;
 }
 
 .header {

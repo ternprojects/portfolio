@@ -1,0 +1,90 @@
+//Help's classes
+.mb-0 {
+	margin-bottom: 0;
+}
+
+//Left-side
+.modal {
+	&__dialog--sm {
+		max-width: 900px;
+	}
+	&__title {
+		text-align: left;
+	}
+	&__subtitle {
+		text-transform: uppercase;
+		font-size: 1.06rem;
+		color: $black;
+		font-weight: 400;
+	}
+}
+.contact {
+	background: url('https://via.placeholder.com/480x700') right center no-repeat;
+	display: flex;
+	&__left {
+		width: 47%;
+		padding: 2rem;
+	}
+	&__info {
+		margin: 2rem 0 3rem;
+		font-size: 0.94rem;
+		color: $black;
+		font-weight: 300;
+	}
+	&__info-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 0.75rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__info-icon {
+		width: 25px;
+		height: 25px;
+		margin-right: .75rem;
+	}
+	.form {
+		&__group {
+			margin-bottom: 1.8rem;
+		}
+		&__label {
+			display: inline-block;
+			margin-bottom: 0.6rem;
+			font-size: 0.8rem;
+			color: $black;
+			font-weight: 700;
+		}
+		&__input,
+		&__textarea {
+			display: block;
+			width: 100%;
+			padding: 1.3rem 1.8rem;
+			font-family: inherit;
+			border: 1px solid rgba(#707070, 0.3);
+			border-radius: 1.8rem;
+			font-size: 0.8rem;
+			line-height: 1.2;
+			font-weight: 300;
+			transition: border-color 0.2s linear;
+			&::placeholder {
+				color: $black;
+			}
+			&:focus {
+				outline: none;
+				background-color: #ccc;
+				border-color: #000;
+				&::placeholder {
+					color: $black;
+				}
+			}
+		}
+		&__textarea {
+			height: 200px;
+			resize: none;
+		}
+		.btn {
+			@include btn;
+		}
+	}
+}

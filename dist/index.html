@@ -40,7 +40,7 @@
 
 <!-- Отображаемое тело страницы -->
 
-<body class="no-scroll">
+<body>
 
 	<header class="header">
 	<div class="_container">
@@ -329,7 +329,7 @@
 
 	</div> <!-- ./container -->
 </section>
-	<div class="modal" style="display:none">
+	<div class="modal" style="display: none;">
 	<div class="modal__dialog">
 		<button class="modal__close" type="button">
 			<img src="img/icons/icons.svg#modal-close" alt="Close" />
@@ -404,7 +404,7 @@
 		</div> <!-- /.modal-work -->
 	</div> <!-- /.modal__dialog -->
 </div> <!-- /.modal -->
-	<div class="modal">
+	<div class="modal" style="display: none;">
 	<div class="modal__dialog">
 		<button class="modal__close" type="button">
 			<img src="img/icons/icons.svg#modal-close" alt="Close" />
@@ -559,6 +559,45 @@
 			<!--/.timeline__item -->
 		</div>
 		<!--/.timeline -->
+	</div>
+	<!--/.modal__dialog -->
+</div>
+<!--/.modal -->
+	<div class="modal" style="display: none;">
+	<div class="modal__dialog modal__dialog--sm">
+		<button class="modal__close" type="button">
+			<img src="img/icons/icons.svg#modal-close" alt="Close" />
+		</button>
+		<div class="contact">
+			<div class="contact__left">
+				<h3 class="modal__title mb-0">Let's talk</h3>
+				<h4 class="modal__subtitle">Call me or send a request</h4>
+				<ul class="contact__info">
+					<li class="contact__info-item">
+						<img class="contact__info-icon" src="img/icons/icons.svg#phone" alt="Phone" />
+						(200) 200 3000
+					</li>
+					<li class="contact__info-item">
+						<img class="contact__info-icon" src="img/icons/icons.svg#email" alt="Email" />
+						designer@ui43.com
+					</li>
+				</ul>
+				<form class="form" action="/" method="post">
+
+					<div class="form__group">
+						<label class="form__label" for="input-email">Adress e-mail</label>
+						<input class="form__input" name="input-email" type="text" id="input-email" placeholder="Adress e-mail">
+					</div>
+
+					<div class="form__group">
+						<label class="form__label" for="input-text">Request</label>
+						<textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+					</div>
+					<button class="btn" type="submit">Send</button>
+				</form>
+			</div>
+		</div>
+		<!--./contact-->
 	</div>
 	<!--/.modal__dialog -->
 </div>
