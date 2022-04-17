@@ -19,6 +19,9 @@
 		/*Modificators*/
 		@include btn--sm;
 	}
+	.text-center {
+		text-align: center;
+	}
 	.portfolio {
 		display: flex;
 		flex-wrap: wrap;

@@ -1,12 +1,14 @@
-<div class="modal" style="display: none;">
+<div class="modal" id="modal_cv">
 	<div class="modal__dialog">
-		<button class="modal__close" type="button">
+		<button class="modal__close" type="button" data-close>
 			<img src="@img/icons/icons.svg#modal-close" alt="Close" />
 		</button>
 		<div class="modal__content">
 			<h3 class="modal__title">Resume</h3>
-			<a class="btn btn--thin" href="">Download PDF</a>
-			<a class="btn btn--thin" href="">Print</a>
+			<div>
+				<a class="btn btn--thin" href="#">Download PDF</a>
+				<a class="btn btn--thin" href="#">Print</a>
+			</div>
 			<div class="timeline">
 				<div class="timeline__col timeline__col--left">
 					<h4 class="timeline__title">Experience</h4>
@@ -149,7 +151,7 @@
 				</div>
 				<!--/.timeline__col timeline__col--right-->
 			</div>
-			<a class="btn__down" href="#">Hire Me</a>
+			<a class="btn__down" href="#" data-modal="#modal_contacts">Hire Me</a>
 			<!--/.timeline__item -->
 		</div>
 		<!--/.timeline -->
