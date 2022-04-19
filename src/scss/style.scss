@@ -11,10 +11,13 @@
 @import 'screens/about';
 @import 'screens/reviews';
 @import 'screens/news';
-@import 'footer.scss';
-@import 'modals/modal-projects.scss';
+@import 'footer';
+@import 'modals/modal-projects';
 @import 'modals/modal-cv.scss';
-@import 'modals/modal-contacts.scss';
+@import 'modals/modal-contacts';
+
+//Slider
+@import 'modals/slick-slider/slider';
 
 //Adaptive
 //@import "media/s.scss";
@@ -24,11 +27,3 @@
 // @import "media/lg";
 // @import "media/xl";
 // @import "media/xxl";
-
-//Header settings
-.header {
-	padding: 1.2rem 0; //1.2 rem = 18px
-	.header__inner {
-		@include flex;
-	}
-}
