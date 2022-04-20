@@ -30,6 +30,12 @@
 		&__col {
 			flex-basis: 33.3333%;
 			padding: 1rem;
+			@media ($mobile) {
+				flex-basis: 50%;
+			}
+			@media ($mobile-sm) {
+				flex-basis: 100%;
+			}
 		}
 		.work {
 			box-shadow: 0 0 4px;

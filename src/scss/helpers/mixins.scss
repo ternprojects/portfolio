@@ -7,12 +7,14 @@
 // 	letter-spacing: $ls;
 // }
 
+//Flex settings
 @mixin flex($d: flex, $jc: space-between, $ai: center) {
 	display: $d;
 	justify-content: $jc;
 	align-items: $ai;
 }
 
+//Buttons
 @mixin btn() {
 	display: inline-block;
 	vertical-align: top;

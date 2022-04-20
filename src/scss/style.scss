@@ -1,8 +1,8 @@
 //Service
-@import 'normalize';
+@import 'helpers/normalize';
+@import 'helpers/variables';
 @import 'fonts';
-//@import 'variables';
-@import 'mixins';
+@import 'helpers/mixins';
 
 //Pages
 @import 'header';
@@ -12,18 +12,9 @@
 @import 'screens/reviews';
 @import 'screens/news';
 @import 'footer';
-@import 'modals/modal-projects';
-@import 'modals/modal-cv.scss';
-@import 'modals/modal-contacts';
 
 //Slider
 @import 'modals/slick-slider/slider';
-
-//Adaptive
-//@import "media/s.scss";
-// @import "media/xs";
-// @import "media/sm";
-// @import "media/md";
-// @import "media/lg";
-// @import "media/xl";
-// @import "media/xxl";
+@import 'modals/modal-projects';
+@import 'modals/modal-cv.scss';
+@import 'modals/modal-contacts';

@@ -34,7 +34,6 @@ $(function () {
 			})
 		}
 	})
-
 	/*==========================================*/
 
 	/*Modal Windows*/
@@ -75,7 +74,6 @@ $(function () {
 	/*============================================*/
 
 	/*Slider: https://kenwheeler.github.io/slick/*/
-	/*==========================================*/
 	worksSlider.slick({
 		infinite: true,
 		slidesToShow: 1,
@@ -84,6 +82,7 @@ $(function () {
 		arrows: false,
 		dots: true,
 	})
+	/*==========================================*/
 
 	//Functional of slider button
 	$('.slickPrev').on('click', function (event) {
@@ -99,3 +98,11 @@ $(function () {
 	})
 })
 /*==========================================*/
+
+//Close modal window with button "Esc" (JS)
+// document.addEventListener('keydown', function (e) {
+// 	if (e.key === 'Escape') {
+// 		//ваша функция закрытия окна
+
+// 	}
+// })
