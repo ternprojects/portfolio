@@ -5,13 +5,13 @@
 @import 'helpers/mixins';
 
 //Pages
-@import 'header';
+@import 'screens/header';
 @import 'screens/intro';
 @import 'screens/works';
 @import 'screens/about';
 @import 'screens/reviews';
 @import 'screens/news';
-@import 'footer';
+@import 'screens/footer';
 
 //Slider
 @import 'modals/slick-slider/slider';

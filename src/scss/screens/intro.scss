@@ -1,4 +1,7 @@
 .intro {
+	@media ($mobile) {
+		margin-top: 100px;
+	}
 	&__inner {
 		display: flex;
 		padding-top: 6.6rem;
@@ -12,10 +15,16 @@
 			background-size: 370px;
 			height: auto;
 		}
+		@media ($mobile) {
+			background-size: 310px auto;
+		}
 	}
 	&__content {
 		width: 50%;
-		@media ($tablet) {
+		@media ($mobile) {
+			width: 60%;
+		}
+		@media ($mobile-sm) {
 			width: 100%;
 		}
 	}
@@ -51,6 +60,9 @@
 			width: 250px;
 		}
 		@media ($mobile) {
+			width: 230px;
+		}
+		@media ($mobile-sm) {
 			display: none;
 		}
 	}
@@ -71,13 +83,6 @@
 	}
 	.btn {
 		@include btn;
-		@media ($tablet) {
-			font-size: 1rem;
-			padding: 1rem 1.5rem;
-			min-width: 140px;
-		}
-		+ .btn {
-			margin-left: 1rem;
-		}
+		@include media-btn;
 	}
 }

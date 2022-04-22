@@ -51,8 +51,9 @@ $(function () {
 		//Without this settings slider not work
 		worksSlider.slick('setPosition')
 	})
+	/*==========================================*/
 
-	//Close Modal Window -with click on the icon
+	//Close Modal Window - with click on the icon
 	modalClose.on('click', function (event) {
 		event.preventDefault()
 		let $this = $(this)
@@ -67,7 +68,7 @@ $(function () {
 		$('body').removeClass('no-scroll')
 	})
 
-	//Close with mask + don't close modal-contact ("Hire Me")
+	//Close with mask + don't close "Modal-contact" ("Hire Me")
 	$('.modal__dialog').on('click', function (event) {
 		event.stopPropagation()
 	})
@@ -97,6 +98,17 @@ $(function () {
 		currentSlider.slick('slickNext')
 	})
 })
+/*==========================================*/
+
+/*Navigation-menu ("Burger")*/
+const navToggle = $('#navToggle')
+const nav = $('#nav')
+
+navToggle.on('click', function (event) {
+	event.preventDefault()
+	nav.toggleClass('show')
+})
+
 /*==========================================*/
 
 //Close modal window with button "Esc" (JS)
