@@ -79,10 +79,15 @@
 			&:hover {
 				transform: translateY(-5px);
 			}
+			@media ($mobile-sm) {
+				&:nth-child(6) {
+					margin-right: 0;
+				}
+			}
 		}
 	}
-	.btn {
-		@include btn;
-		@include media-btn;
-	}
+}
+.btn {
+	@include btn;
+	@include media-btn;
 }

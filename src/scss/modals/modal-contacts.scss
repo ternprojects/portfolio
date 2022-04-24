@@ -7,9 +7,15 @@
 .modal {
 	&__dialog--sm {
 		max-width: 900px;
+		@media ($tablet) {
+			max-width: 500px;
+		}
 	}
 	&__title {
 		text-align: left;
+		@media ($mobile-sm) {
+			font-size: 2rem;
+		}
 	}
 	&__subtitle {
 		text-transform: uppercase;
@@ -21,9 +27,16 @@
 .contact {
 	background: url('https://via.placeholder.com/480x700') right center no-repeat;
 	display: flex;
+	@media ($tablet) {
+		background: none;
+	}
 	&__left {
 		width: 47%;
 		padding: 2rem;
+		@media ($tablet) {
+			width: 100%;
+			text-align: center;
+		}
 	}
 	&__info {
 		margin: 2rem 0 3rem;
@@ -37,6 +50,9 @@
 		margin-bottom: 0.75rem;
 		&:last-child {
 			margin-bottom: 0;
+		}
+		@media ($tablet) {
+			justify-content: center;
 		}
 	}
 	&__info-icon {
@@ -78,6 +94,13 @@
 					color: $black;
 				}
 			}
+			@media ($tablet) {
+				width: 363px;
+				margin: 0 auto;
+			}
+			@media ($mobile-sm) {
+				max-width: 100%;
+			}
 		}
 		&__textarea {
 			height: 200px;
@@ -85,6 +108,9 @@
 		}
 		.btn {
 			@include btn;
+			@media ($mobile-sm) {
+				width: 30%;
+			}
 		}
 	}
 }

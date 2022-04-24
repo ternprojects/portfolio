@@ -14,12 +14,20 @@
 		color: $black;
 		font-weight: 700;
 		display: inline-block;
+		@media ($mobile) {
+			font-size: 3rem !important;
+		}
 	}
 	.btn {
 		@include btn;
 		@include btn--thin;
 		+ .btn {
 			margin-left: 1rem;
+		}
+		@media ($mobile-sm) {
+			width: 30%;
+			margin: 0;
+			padding: 1rem;
 		}
 	}
 	.timeline {
@@ -28,6 +36,9 @@
 		width: 100%;
 		max-width: 768px;
 		position: relative;
+		@media ($mobile-sm) {
+			flex-direction: column;
+		}
 		&:before {
 			content: '';
 			display: block;
@@ -38,16 +49,28 @@
 			top: 0;
 			left: 50%;
 			z-index: 1;
+			@media ($mobile-sm) {
+				content: none;
+			}
 		}
 		&__col {
 			width: 50%;
 			&--left {
 				padding-right: 3.2rem;
 				text-align: right;
+				@media ($mobile-sm) {
+					text-align: left;
+					width: 100%;
+					padding: 0;
+				}
 			}
 			&--right {
 				padding-left: 3.2rem;
 				text-align: left;
+				@media ($mobile-sm) {
+					width: 100%;
+					padding: 0;
+				}
 			}
 		}
 		&__title {
