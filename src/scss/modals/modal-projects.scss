@@ -40,10 +40,17 @@
 	}
 	&-work {
 		display: flex;
+		@media ($mobile-sm) {
+			flex-direction: column;
+		}
 	}
 	&-work__preview {
 		width: 65%;
 		position: relative;
+		@media ($mobile-sm) {
+			margin: 0 auto;
+			padding-top: 60px;
+		}
 		&__photo {
 			position: absolute;
 			top: 50%;
@@ -56,9 +63,23 @@
 		width: 35%;
 		padding: 3.4rem 6.6rem 1rem 1.73rem;
 		position: relative;
+		@media ($tablet) {
+			padding: 3.4rem 1rem 1rem 1rem;
+		}
+		@media ($mobile) {
+			padding: 3.4rem 1rem 1rem 1rem;
+		}
+		@media ($mobile-sm) {
+			width: 100%;
+			flex-direction: column;
+			padding-top: 20px;
+		}
 	}
 	&-work__header {
 		margin-bottom: 2.2rem;
+		@media ($mobile-sm) {
+			text-align: center;
+		}
 	}
 	&-work__title {
 		margin-bottom: 0.2rem;
@@ -66,6 +87,9 @@
 		color: $black;
 		font-weight: 700;
 		text-transform: uppercase;
+		@media ($mobile-sm) {
+			font-size: 1.8rem;
+		}
 	}
 	&-work__info {
 		font-size: 1.2rem;
@@ -74,6 +98,9 @@
 	}
 	&-work__client {
 		margin-bottom: 2.2rem;
+		@media ($mobile-sm) {
+			margin-bottom: 15px;
+		}
 	}
 	&-work__client-title {
 		margin-bottom: 0.2rem;
