@@ -3,6 +3,9 @@
 	&__content {
 		padding: 5rem 1rem;
 		text-align: center;
+		@media ($mobile-sm) {
+			padding-bottom: 20px;
+		}
 	}
 	.btn__down {
 		@include btn;
@@ -17,6 +20,9 @@
 		@media ($mobile) {
 			font-size: 3rem !important;
 		}
+		@media ($mobile-sm) {
+			margin-bottom: 40px;
+		}
 	}
 	.btn {
 		@include btn;
@@ -26,8 +32,11 @@
 		}
 		@media ($mobile-sm) {
 			width: 30%;
-			margin: 0;
 			padding: 1rem;
+			+ .btn {
+				margin-left: 1rem;
+				margin-top: 0;
+			}
 		}
 	}
 	.timeline {
@@ -38,6 +47,7 @@
 		position: relative;
 		@media ($mobile-sm) {
 			flex-direction: column;
+			margin: 40px 0 30px 0;
 		}
 		&:before {
 			content: '';

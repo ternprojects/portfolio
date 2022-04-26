@@ -50,6 +50,12 @@ $(function () {
 		$('body').addClass('no-scroll')
 		//Without this settings slider not work
 		worksSlider.slick('setPosition')
+		//Modal animation
+		setTimeout(() => {
+			$(modalId).find('.modal__dialog').css({
+				transform: 'scale(1)',
+			})
+		}, 200)
 	})
 	/*==========================================*/
 
@@ -58,14 +64,29 @@ $(function () {
 		event.preventDefault()
 		let $this = $(this)
 		let modalParent = $this.parents('.modal')
-		modalParent.removeClass('show')
-		$('body').removeClass('no-scroll')
+
+		//Modal animation
+		modalParent.find('.modal__dialog').css({
+			transform: 'scale(0)',
+		})
+
+		setTimeout(() => {
+			modalParent.removeClass('show')
+			$('body').removeClass('no-scroll')
+		}, 200)
 	})
 
 	//Close Modal Window with click on the mask
 	$('.modal').on('click', function (event) {
-		$(this).removeClass('show')
-		$('body').removeClass('no-scroll')
+		//Modal animation
+		let $this = $(this)
+		$this.find('.modal__dialog').css({
+			transform: 'scale(0)',
+		})
+		setTimeout(() => {
+			$this.removeClass('show')
+			$('body').removeClass('no-scroll')
+		}, 200)
 	})
 
 	//Close with mask + don't close "Modal-contact" ("Hire Me")

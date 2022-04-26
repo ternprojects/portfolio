@@ -18,9 +18,9 @@
 		margin: auto;
 		position: relative;
 		background-color: $white;
-		//Animation window (No working)
-		// transform: rotateX(90deg);
-		// transition: transform 0.2s linear;
+		//Animation open and close window
+		transform: scale(0);
+		transition: transform 0.2s linear;
 	}
 	&__close {
 		width: 34px;
@@ -33,6 +33,7 @@
 		top: 0.9rem;
 		right: 1rem;
 		z-index: 1;
+		//Animation icon
 		transition: transform 0.2s linear;
 		&:hover {
 			transform: rotate(90deg);

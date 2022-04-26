@@ -1130,6 +1130,8 @@ p {
   margin: auto;
   position: relative;
   background-color: #fff;
+  transform: scale(0);
+  transition: transform 0.2s linear;
 }
 .modal__close {
   width: 34px;
@@ -1290,6 +1292,11 @@ p {
   padding: 5rem 1rem;
   text-align: center;
 }
+@media (max-width: 565px) {
+  .modal__content {
+    padding-bottom: 20px;
+  }
+}
 .modal .btn__down {
   display: inline-block;
   vertical-align: top;
@@ -1327,6 +1334,11 @@ p {
     font-size: 3rem !important;
   }
 }
+@media (max-width: 565px) {
+  .modal__title {
+    margin-bottom: 40px;
+  }
+}
 .modal .btn {
   display: inline-block;
   vertical-align: top;
@@ -1359,8 +1371,11 @@ p {
 @media (max-width: 565px) {
   .modal .btn {
     width: 30%;
-    margin: 0;
     padding: 1rem;
+  }
+  .modal .btn + .btn {
+    margin-left: 1rem;
+    margin-top: 0;
   }
 }
 .modal .timeline {
@@ -1373,6 +1388,7 @@ p {
 @media (max-width: 565px) {
   .modal .timeline {
     flex-direction: column;
+    margin: 40px 0 30px 0;
   }
 }
 .modal .timeline:before {
