@@ -9,31 +9,6 @@
 	box-sizing: border-box;
 }
 
-a {
-	text-decoration: none;
-}
-
-ul,
-ol,
-li {
-	list-style: none;
-}
-
-img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0;
-}
-
 html {
 	font-size: 15px;
 }
@@ -49,6 +24,31 @@ body {
 	&.no-scroll {
 		overflow: hidden;
 	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 //My settings

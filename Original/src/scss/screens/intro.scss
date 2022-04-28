@@ -1,0 +1,93 @@
+.intro {
+	@media ($mobile) {
+		margin-top: 100px;
+	}
+	&__inner {
+		display: flex;
+		padding-top: 6.6rem;
+		padding-bottom: 8rem;
+		position: relative;
+		background: url('../img/symbols.png') right top no-repeat;
+		border-bottom: 1px solid rgba($gray, 0.3);
+		@media ($tablet) {
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+			background-size: 370px;
+			height: auto;
+		}
+		@media ($mobile) {
+			background-size: 310px auto;
+		}
+	}
+	&__content {
+		width: 50%;
+		@media ($mobile) {
+			width: 60%;
+		}
+		@media ($mobile-sm) {
+			width: 100%;
+		}
+	}
+	&__subtitle {
+		font-size: 2.13rem;
+		color: $black;
+		@media ($tablet) {
+			font-size: 1.5rem;
+		}
+	}
+	&__title {
+		margin-bottom: 5px;
+		font-size: 3rem;
+		color: $black;
+		font-weight: 700;
+		@media ($tablet) {
+			font-size: 2rem;
+		}
+	}
+	&__text {
+		font-size: 1.2rem;
+		color: rgba($black, 0.7);
+		margin-bottom: 25px;
+	}
+	&__photo {
+		position: absolute;
+		right: 65px;
+		bottom: -1px;
+		z-index: 1;
+		width: 350px;
+		height: auto;
+		@media ($tablet) {
+			width: 250px;
+		}
+		@media ($mobile) {
+			width: 230px;
+		}
+		@media ($mobile-sm) {
+			display: none;
+		}
+	}
+	.social {
+		margin-bottom: 42px;
+		display: flex;
+		&__link {
+			margin-right: 10px;
+			transition: transform 0.2s linear;
+			img {
+				width: 45px;
+				height: 45px;
+			}
+			&:hover {
+				transform: translateY(-5px);
+			}
+			@media ($mobile-sm) {
+				&:nth-child(6) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+.btn {
+	@include btn;
+	@include media-btn;
+}

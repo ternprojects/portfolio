@@ -12,7 +12,7 @@
 		@media ($tablet) {
 			padding-top: 3rem;
 			padding-bottom: 3rem;
-			background-size: 370px;
+			background-size: 370px auto;
 			height: auto;
 		}
 		@media ($mobile) {
@@ -26,6 +26,7 @@
 		}
 		@media ($mobile-sm) {
 			width: 100%;
+			text-align: center;
 		}
 	}
 	&__subtitle {
@@ -80,9 +81,7 @@
 				transform: translateY(-5px);
 			}
 			@media ($mobile-sm) {
-				&:nth-child(6) {
-					margin-right: 0;
-				}
+				margin: 0 auto;
 			}
 		}
 	}
@@ -90,4 +89,21 @@
 .btn {
 	@include btn;
 	@include media-btn;
+	@media ($mobile) {
+		width: 75%;
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+		&:not(:first-child) {
+			margin-left: 0;
+		}
+	}
+	@media ($mobile-sm) {
+		width: 180px;
+		display: inline-block;
+		margin-right: 0px;
+		&:not(:first-child) {
+			margin-top: 0;
+		}
+	}
 }

@@ -1,0 +1,20 @@
+//Service
+@import 'helpers/normalize';
+@import 'helpers/variables';
+@import 'fonts';
+@import 'helpers/mixins';
+
+//Pages
+@import 'screens/header';
+@import 'screens/intro';
+@import 'screens/works';
+@import 'screens/about';
+@import 'screens/reviews';
+@import 'screens/news';
+@import 'screens/footer';
+
+//Slider
+@import 'modals/slick-slider/slider';
+@import 'modals/modal-projects';
+@import 'modals/modal-cv.scss';
+@import 'modals/modal-contacts';

@@ -7,14 +7,11 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 const swiper = new Swiper();
 */
 
-/*Filter*/
-/*===========================================*/
-
+/*Slider*/
 $(function () {
+	/*Filter*/
 	const worksSlider = $('[data-slider="slick"]')
 
-	/*Filter*/
-	/*===========================================*/
 	let filter = $('[data-filter]')
 	filter.on('click', function (event) {
 		event.preventDefault()
@@ -25,7 +22,6 @@ $(function () {
 		} else {
 			$('[data-cat]').each(function () {
 				let workCat = $(this).data('cat')
-
 				if (workCat != cat) {
 					$(this).addClass('hide')
 				} else {
@@ -36,8 +32,7 @@ $(function () {
 	})
 	/*==========================================*/
 
-	/*Modal Windows*/
-	/*==========================================*/
+	//Modal Windows
 	const modalCall = $('[data-modal]')
 	const modalClose = $('[data-close]')
 
@@ -51,7 +46,7 @@ $(function () {
 		//Without this settings slider not work
 		worksSlider.slick('setPosition')
 		//Modal animation
-		setTimeout(() => {
+		setTimeout(function () {
 			$(modalId).find('.modal__dialog').css({
 				transform: 'scale(1)',
 			})
@@ -69,13 +64,11 @@ $(function () {
 		modalParent.find('.modal__dialog').css({
 			transform: 'scale(0)',
 		})
-
-		setTimeout(() => {
+		setTimeout(function () {
 			modalParent.removeClass('show')
 			$('body').removeClass('no-scroll')
 		}, 200)
 	})
-
 	//Close Modal Window with click on the mask
 	$('.modal').on('click', function (event) {
 		//Modal animation
@@ -83,7 +76,7 @@ $(function () {
 		$this.find('.modal__dialog').css({
 			transform: 'scale(0)',
 		})
-		setTimeout(() => {
+		setTimeout(function () {
 			$this.removeClass('show')
 			$('body').removeClass('no-scroll')
 		}, 200)
@@ -95,7 +88,7 @@ $(function () {
 	})
 	/*============================================*/
 
-	/*Slider: https://kenwheeler.github.io/slick/*/
+	//Slider: https://kenwheeler.github.io/slick/
 	worksSlider.slick({
 		infinite: true,
 		slidesToShow: 1,
@@ -120,8 +113,7 @@ $(function () {
 	})
 })
 /*==========================================*/
-
-/*Navigation-menu ("Burger")*/
+//Navigation-menu ("Burger")
 const navToggle = $('#navToggle')
 const nav = $('#nav')
 
@@ -129,7 +121,6 @@ navToggle.on('click', function (event) {
 	event.preventDefault()
 	nav.toggleClass('show')
 })
-
 /*==========================================*/
 
 //Close modal window with button "Esc" (JS)

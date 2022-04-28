@@ -17,10 +17,8 @@
 		color: $black;
 		font-weight: 700;
 		display: inline-block;
-		@media ($mobile) {
-			font-size: 3rem !important;
-		}
 		@media ($mobile-sm) {
+			font-size: 3rem !important;
 			margin-bottom: 40px;
 		}
 	}
@@ -30,12 +28,17 @@
 		+ .btn {
 			margin-left: 1rem;
 		}
-		@media ($mobile-sm) {
+		@media ($tablet) {
 			width: 30%;
 			padding: 1rem;
-			+ .btn {
-				margin-left: 1rem;
-				margin-top: 0;
+			margin-bottom: 0;
+		}
+		@media ($mobile-sm) {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
+			&:last-child {
+				margin-left: 0;
 			}
 		}
 	}
@@ -47,7 +50,7 @@
 		position: relative;
 		@media ($mobile-sm) {
 			flex-direction: column;
-			margin: 40px 0 30px 0;
+			margin: 0;
 		}
 		&:before {
 			content: '';
@@ -89,6 +92,9 @@
 			color: $black;
 			text-transform: uppercase;
 			font-weight: 700;
+			@media ($mobile-sm) {
+				margin-top: 40px;
+			}
 		}
 		&__title--margin {
 			margin-top: 2.6rem;

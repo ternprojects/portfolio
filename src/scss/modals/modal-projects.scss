@@ -67,9 +67,6 @@
 		@media ($tablet) {
 			padding: 3.4rem 1rem 1rem 1rem;
 		}
-		@media ($mobile) {
-			padding: 3.4rem 1rem 1rem 1rem;
-		}
 		@media ($mobile-sm) {
 			width: 100%;
 			flex-direction: column;
@@ -120,6 +117,9 @@
 		color: $gray;
 		line-height: 2;
 		flex-wrap: 300;
+		@media($mobile-sm) {
+			margin-bottom: 60px;
+		}
 	}
 	&-work__footer {
 		width: 100%;

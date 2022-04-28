@@ -7,31 +7,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
 html {
   font-size: 15px;
 }
@@ -47,6 +22,31 @@ body {
 }
 body.no-scroll {
   overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 p {
@@ -266,7 +266,7 @@ p {
   .intro__inner {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-size: 370px;
+    background-size: 370px auto;
     height: auto;
   }
 }
@@ -286,6 +286,7 @@ p {
 @media (max-width: 565px) {
   .intro__content {
     width: 100%;
+    text-align: center;
   }
 }
 .intro__subtitle {
@@ -352,17 +353,18 @@ p {
   transform: translateY(-5px);
 }
 @media (max-width: 565px) {
-  .intro .social__link:nth-child(6) {
-    margin-right: 0;
+  .intro .social__link {
+    margin: 0 auto;
   }
 }
 
 .btn {
   display: inline-block;
   vertical-align: top;
-  padding: 1.05em 1.7em;
+  padding: 1.1rem 1.8rem;
+  min-width: 170px;
   border: 1px solid #6a696b;
-  border-radius: 1.8em;
+  border-radius: 30px;
   background: none;
   font-family: inherit;
   font-size: 1.06rem;
@@ -409,6 +411,27 @@ p {
     margin-top: 1rem;
   }
 }
+@media (max-width: 767px) {
+  .btn {
+    width: 75%;
+  }
+  .btn:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .btn:not(:first-child) {
+    margin-left: 0;
+  }
+}
+@media (max-width: 565px) {
+  .btn {
+    width: 180px;
+    display: inline-block;
+    margin-right: 0px;
+  }
+  .btn:not(:first-child) {
+    margin-top: 0;
+  }
+}
 
 .works {
   margin: 2.8rem 0;
@@ -430,9 +453,10 @@ p {
 .works .btn {
   display: inline-block;
   vertical-align: top;
-  padding: 1.05em 1.7em;
+  padding: 1.1rem 1.8rem;
+  min-width: 170px;
   border: 1px solid #6a696b;
-  border-radius: 1.8em;
+  border-radius: 30px;
   background: none;
   font-family: inherit;
   font-size: 1.06rem;
@@ -593,9 +617,10 @@ p {
 .about__content .btn {
   display: inline-block;
   vertical-align: top;
-  padding: 1.05em 1.7em;
+  padding: 1.1rem 1.8rem;
+  min-width: 170px;
   border: 1px solid #6a696b;
-  border-radius: 1.8em;
+  border-radius: 30px;
   background: none;
   font-family: inherit;
   font-size: 1.06rem;
@@ -778,9 +803,10 @@ p {
 .news .btn {
   display: inline-block;
   vertical-align: top;
-  padding: 1.05em 1.7em;
+  padding: 1.1rem 1.8rem;
+  min-width: 170px;
   border: 1px solid #6a696b;
-  border-radius: 1.8em;
+  border-radius: 30px;
   background: none;
   font-family: inherit;
   font-size: 1.06rem;
@@ -1184,11 +1210,6 @@ p {
     padding: 3.4rem 1rem 1rem 1rem;
   }
 }
-@media (max-width: 767px) {
-  .modal-work__content {
-    padding: 3.4rem 1rem 1rem 1rem;
-  }
-}
 @media (max-width: 565px) {
   .modal-work__content {
     width: 100%;
@@ -1247,6 +1268,11 @@ p {
   line-height: 2;
   flex-wrap: 300;
 }
+@media (max-width: 565px) {
+  .modal-work__text {
+    margin-bottom: 60px;
+  }
+}
 .modal-work__footer {
   width: 100%;
   display: flex;
@@ -1300,9 +1326,10 @@ p {
 .modal .btn__down {
   display: inline-block;
   vertical-align: top;
-  padding: 1.05em 1.7em;
+  padding: 1.1rem 1.8rem;
+  min-width: 170px;
   border: 1px solid #6a696b;
-  border-radius: 1.8em;
+  border-radius: 30px;
   background: none;
   font-family: inherit;
   font-size: 1.06rem;
@@ -1329,22 +1356,19 @@ p {
   font-weight: 700;
   display: inline-block;
 }
-@media (max-width: 767px) {
-  .modal__title {
-    font-size: 3rem !important;
-  }
-}
 @media (max-width: 565px) {
   .modal__title {
+    font-size: 3rem !important;
     margin-bottom: 40px;
   }
 }
 .modal .btn {
   display: inline-block;
   vertical-align: top;
-  padding: 1.05em 1.7em;
+  padding: 1.1rem 1.8rem;
+  min-width: 170px;
   border: 1px solid #6a696b;
-  border-radius: 1.8em;
+  border-radius: 30px;
   background: none;
   font-family: inherit;
   font-size: 1.06rem;
@@ -1368,14 +1392,19 @@ p {
 .modal .btn + .btn {
   margin-left: 1rem;
 }
-@media (max-width: 565px) {
+@media (max-width: 991px) {
   .modal .btn {
     width: 30%;
     padding: 1rem;
+    margin-bottom: 0;
   }
-  .modal .btn + .btn {
-    margin-left: 1rem;
-    margin-top: 0;
+}
+@media (max-width: 565px) {
+  .modal .btn:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .modal .btn:last-child {
+    margin-left: 0;
   }
 }
 .modal .timeline {
@@ -1388,7 +1417,7 @@ p {
 @media (max-width: 565px) {
   .modal .timeline {
     flex-direction: column;
-    margin: 40px 0 30px 0;
+    margin: 0;
   }
 }
 .modal .timeline:before {
@@ -1437,6 +1466,11 @@ p {
   color: #2b2a2c;
   text-transform: uppercase;
   font-weight: 700;
+}
+@media (max-width: 565px) {
+  .modal .timeline__title {
+    margin-top: 40px;
+  }
 }
 .modal .timeline__title--margin {
   margin-top: 2.6rem;
@@ -1592,7 +1626,6 @@ p {
 }
 .contact .form__input:focus, .contact .form__textarea:focus {
   outline: none;
-  background-color: #ccc;
   border-color: #000;
 }
 .contact .form__input:focus::placeholder, .contact .form__textarea:focus::placeholder {
@@ -1600,7 +1633,7 @@ p {
 }
 @media (max-width: 991px) {
   .contact .form__input, .contact .form__textarea {
-    width: 363px;
+    width: 360px;
     margin: 0 auto;
   }
 }
@@ -1616,9 +1649,10 @@ p {
 .contact .form .btn {
   display: inline-block;
   vertical-align: top;
-  padding: 1.05em 1.7em;
+  padding: 1.1rem 1.8rem;
+  min-width: 170px;
   border: 1px solid #6a696b;
-  border-radius: 1.8em;
+  border-radius: 30px;
   background: none;
   font-family: inherit;
   font-size: 1.06rem;
@@ -1637,7 +1671,7 @@ p {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
   border-color: #2b2a2c;
 }
-@media (max-width: 565px) {
+@media (max-width: 767px) {
   .contact .form .btn {
     width: 30%;
   }
