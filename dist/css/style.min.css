@@ -275,6 +275,12 @@ p {
     background-size: 310px auto;
   }
 }
+@media (max-width: 565px) {
+  .intro__inner {
+    background-size: 480px auto;
+    background-position: 50%;
+  }
+}
 .intro__content {
   width: 50%;
 }
@@ -349,12 +355,22 @@ p {
   width: 45px;
   height: 45px;
 }
+@media (max-width: 565px) {
+  .intro .social__link img {
+    width: 40px;
+    height: 40px;
+  }
+}
 .intro .social__link:hover {
   transform: translateY(-5px);
 }
 @media (max-width: 565px) {
   .intro .social__link {
     margin: 0 auto;
+    margin-left: 0;
+  }
+  .intro .social__link:last-child {
+    margin-right: 0;
   }
 }
 
