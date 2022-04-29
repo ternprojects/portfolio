@@ -1,5 +1,5 @@
 .about {
-	margin: 8.4rem 0;
+	margin: 5rem 0;
 	@media ($tablet) {
 		margin: 4rem 0;
 	}
@@ -19,30 +19,50 @@
 		position: relative;
 		img {
 			position: absolute;
-			bottom: 0;
+			width: 380px;
+			bottom: 35px;
+			border-radius: 30px;
 			z-index: 2;
+			left: 2rem;
+			box-shadow: -34px 36px rgba(43, 42, 44, 0.15);
+			@media ($tablet) {
+				width: 250px;
+				height: 250px;
+				bottom: 2px;
+			}
+			@media ($mobile-sm) {
+				width: 200px;
+				height: 200px;
+			}
 		}
-		&:before {
-			content: '';
-			display: block;
-			width: 413px;
-			height: 413px;
-			background-color: #efefef;
-			position: absolute;
-			left: 1rem;
-			bottom: 0;
-			z-index: 1;
-		}
+		// &:before {
+		// 	content: '';
+		// 	display: block;
+		// 	width: 380px;
+		// 	height: 380px;
+		// 	background-color: #efefef;
+		// 	border-radius: 30px;
+		// 	position: absolute;
+		// 	left: 0;
+		// 	bottom: 0;
+		// 	z-index: 1;
+		// }
 		@media ($tablet) {
 			order: 2;
-			&:before {
-				width: 100%;
-				height: 300px;
-				left: 0;
-			}
+			// &:before {
+			// 	width: 250px;
+			// 	height: 250px;
+			// 	top: 25px;
+			// 	left: 37%;
+			// 	@media ($mobile) {
+			// 		top: 20px;
+			// 		left: 250px;
+			// 	}
+			// }
 			img {
 				position: relative;
 				margin: 0 auto;
+				box-shadow: -30px 30px rgba(43, 42, 44, 0.15);
 			}
 		}
 	}
@@ -57,14 +77,31 @@
 			max-width: 800px;
 			margin-left: auto;
 			margin-right: auto;
-			// a.btn,
-			// button.btn {
-			// 	padding: 15px 20px;
-			// }
 		}
 		.btn {
 			@include btn;
 			@include media-btn;
+			@media ($mobile) {
+				width: 45%;
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+				&:not(:first-child) {
+					margin-left: 20px;
+				}
+			}
+			@media ($mobile-sm) {
+				display: inline-block;
+				margin: 0 auto;
+				width: 65%;
+				&:not(:first-child) {
+					margin-top: 0;
+					margin-left: 0;
+				}
+				&:not(:last-child) {
+					margin-left: 0px;
+				}
+			}
 		}
 	}
 	&__title {

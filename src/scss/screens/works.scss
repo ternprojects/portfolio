@@ -18,6 +18,9 @@
 		@include btn;
 		/*Modificators*/
 		@include btn--sm;
+		@media ($mobile) {
+			max-width: 12rem;
+		}
 	}
 	.text-center {
 		text-align: center;

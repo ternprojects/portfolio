@@ -25,6 +25,9 @@
 	.btn {
 		@include btn;
 		@include btn--sm;
+		@media ($mobile) {
+			max-width: 9rem;
+		}
 	}
 	.articles {
 		display: flex;
