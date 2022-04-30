@@ -124,23 +124,23 @@ navToggle.on('click', function (event) {
 /*==========================================*/
 
 //Button Up
-// function backToTop() {
-// 	let button = $('.back-to-top')
+function backToTop() {
+	let button = $('.back-to-top')
 
-// 	$(window).on('scroll', () => {
-// 		if ($(this).scrollTop() >= 50) {
-// 			button.fadeIn()
-// 		} else {
-// 			button.fadeOut()
-// 		}
-// 	})
-// 	button.on('click', (e) => {
-// 		e.preventDefault()
-// 		$('html').animate({ scrollTop: 0 }, 1000)
-// 	})
-// }
+	$(window).on('scroll', () => {
+		if ($(this).scrollTop() >= 50) {
+			button.fadeOut()
+		} else {
+			button.fadeIn()
+		}
+	})
+	button.on('click', (e) => {
+		e.preventDefault()
+		$('html').animate({ scrollTop: 0 }, 1000)
+	})
+}
 
-// backToTop()
+backToTop()
 /*==========================================*/
 
 //Close modal window with button "Esc" (JS)
