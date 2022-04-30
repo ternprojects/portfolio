@@ -58,7 +58,13 @@
 		display: none;
 		&.show {
 			display: flex;
-			width: 50%;
+			width: 30%;
+			background-color: #ccc;
+		}
+		@media ($mobile-sm) {
+			&.show {
+				width: 50%;
+			}
 		}
 	}
 	&__link {
@@ -119,25 +125,5 @@
 				margin: 0 auto;
 			}
 		}
-	}
-}
-
-//Burger-icon
-.burger {
-	width: 30px;
-	height: 30px;
-	padding: 0;
-	border: 0;
-	background: none;
-	display: none;
-	&__icon {
-		display: block;
-		max-width: 100%;
-		height: auto;
-	}
-	@media ($mobile) {
-		display: block;
-		margin-bottom: 20px;
-		margin-right: 20px;
 	}
 }
