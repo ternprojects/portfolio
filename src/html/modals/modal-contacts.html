@@ -1,4 +1,4 @@
-<div class="modal"  id="modal_contacts">
+<div class="modal" id="modal_contacts">
 	<div class="modal__dialog modal__dialog--sm">
 		<button class="modal__close" type="button" data-close>
 			<img src="@img/icons/icons.svg#modal-close" alt="Close" />
@@ -10,23 +10,25 @@
 				<ul class="contact__info">
 					<li class="contact__info-item">
 						<img class="contact__info-icon" src="@img/icons/icons.svg#phone" alt="Phone" />
-						(200) 200 3000
+						+39(093) 832 6506
 					</li>
 					<li class="contact__info-item">
 						<img class="contact__info-icon" src="@img/icons/icons.svg#email" alt="Email" />
-						designer@ui43.com
+						ternxstyle@gmail.com
 					</li>
 				</ul>
 				<form class="form" action="/" method="post">
 
 					<div class="form__group">
 						<label class="form__label" for="input-email">Adress e-mail</label>
-						<input class="form__input" name="input-email" type="text" id="input-email" placeholder="Adress e-mail">
+						<input class="form__input" name="input-email" type="email" id="input-email" placeholder="Adress e-mail" required minlength="5"
+							title="Адрес почты должен состоять из логина и домена, также включать символ '@', например: 'login@mail.com'">
 					</div>
 
 					<div class="form__group">
 						<label class="form__label" for="input-text">Request</label>
-						<textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+						<textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..." required minlength="2" maxlength="1000" pattern="[a-zA-Z]+"
+							title="Сообщение может содержать от 2 до 1000 символов"></textarea>
 					</div>
 					<button class="btn" type="submit">Send</button>
 				</form>

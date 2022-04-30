@@ -74,7 +74,7 @@ p {
   background-color: transparent;
   border-radius: 50%;
   border: 2px solid #000;
-  background-color: rgba(141, 141, 142, 0.6);
+  background-color: rgba(141, 141, 142, 0.5);
   display: none;
 }
 .back-to-top:hover, .back-to-top:focus {
@@ -1654,7 +1654,7 @@ p {
 }
 
 .contact {
-  background: url("https://via.placeholder.com/480x700") right center no-repeat;
+  background: url("../img/mail.png") 95% center no-repeat;
   display: flex;
 }
 @media (max-width: 991px) {
@@ -1727,6 +1727,15 @@ p {
 }
 .contact .form__input:focus::placeholder, .contact .form__textarea:focus::placeholder {
   color: #2b2a2c;
+}
+.contact .form__input:valid, .contact .form__textarea:valid {
+  border-color: green;
+}
+.contact .form__input:invalid, .contact .form__textarea:invalid {
+  border-color: red;
+}
+.contact .form__input:not(:focus):invalid, .contact .form__textarea:not(:focus):invalid {
+  border-color: #6a696b;
 }
 @media (max-width: 991px) {
   .contact .form__input, .contact .form__textarea {

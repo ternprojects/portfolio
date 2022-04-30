@@ -25,7 +25,7 @@
 	}
 }
 .contact {
-	background: url('https://via.placeholder.com/480x700') right center no-repeat;
+	background: url('@img/mail.png') 95% center no-repeat;
 	display: flex;
 	@media ($tablet) {
 		background: none;
@@ -92,6 +92,15 @@
 				&::placeholder {
 					color: $black;
 				}
+			}
+			&:valid {
+				border-color: green;
+			}
+			&:invalid {
+				border-color: red;
+			}
+			&:not(:focus):invalid {
+				border-color: $gray;
 			}
 			@media ($tablet) {
 				width: 360px;
