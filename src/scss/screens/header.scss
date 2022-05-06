@@ -20,6 +20,10 @@
 		&__avatar {
 			img {
 				width: 65px;
+				@media ($mobile-sm) {
+					width: 50px;
+					margin-top: 10px;
+				}
 			}
 		}
 		&__content {
@@ -38,7 +42,6 @@
 		}
 	}
 }
-
 //Menu - right-side
 .nav {
 	@include flex;
@@ -58,12 +61,12 @@
 		display: none;
 		&.show {
 			display: flex;
-			width: 30%;
+			width: 50%;
 			background-color: #ccc;
 		}
 		@media ($mobile-sm) {
 			&.show {
-				width: 50%;
+				width: 100%;
 			}
 		}
 	}

@@ -1,23 +1,23 @@
 //Burger-icon
-// .burger {
-// 	width: 30px;
-// 	height: 30px;
-// 	padding: 0;
-// 	border: 0;
-// 	background: none;
-// 	display: none;
-// 	&__icon {
-// 		display: block;
-// 		max-width: 100%;
-// 		height: auto;
-// 	}
-// 	@media ($mobile) {
-// 		display: block;
-// 		margin-bottom: 20px;
-// 		margin-right: 20px;
-// 	}
-// }
-
+.burger {
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	border: 0;
+	background: none;
+	display: none;
+	&__icon {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	@media ($mobile) {
+		display: block;
+		margin-bottom: 20px;
+		margin-right: 20px;
+	}
+}
+//My settings
 .header__burger {
 	display: none;
 	@media ($mobile) {
@@ -47,13 +47,12 @@
 		&:before {
 			top: 0;
 		}
-		&:after {
-			bottom: 0;
-		}
 		&.active span {
 			transform: scale(0);
 		}
-
+		&:after {
+			bottom: 0;
+		}
 		&.active::before {
 			transform: rotate(45deg);
 			top: 8px;

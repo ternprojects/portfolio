@@ -25,10 +25,11 @@
 	}
 }
 .contact {
-	background: url('@img/mail.png') 95% center no-repeat;
+	background: url('@img/mail.png') right center no-repeat;
 	display: flex;
+	margin-right: 20px;
 	@media ($tablet) {
-		background: none;
+		background-image: none !important;
 	}
 	&__left {
 		width: 47%;

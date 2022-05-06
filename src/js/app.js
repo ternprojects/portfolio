@@ -7,17 +7,20 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 const swiper = new Swiper();
 */
 
-/*Slider*/
-$(function () {
-	/*Filter*/
-	const worksSlider = $('[data-slider="slick"]')
+import './modules/button-up.js'
+import './modules/burger-menu.js'
+import './modules/accordeon.js';
 
+$(function () {
+	/*Slider*/
+	const worksSlider = $('[data-slider="slick"]')
+	/*Filter*/
 	let filter = $('[data-filter]')
 	filter.on('click', function (event) {
 		event.preventDefault()
 		let cat = $(this).data('filter')
 
-		if (cat == 'all') {
+		if (cat === 'all') {
 			$('[data-cat]').removeClass('hide')
 		} else {
 			$('[data-cat]').each(function () {
@@ -82,7 +85,7 @@ $(function () {
 		}, 200)
 	})
 
-	//Close with mask + don't close "Modal-contact" ("Hire Me")
+	//Close with mask + don't close, if fill fields "Modal-contact" ("Hire Me")
 	$('.modal__dialog').on('click', function (event) {
 		event.stopPropagation()
 	})
@@ -113,47 +116,3 @@ $(function () {
 	})
 })
 /*==========================================*/
-//Navigation-menu ("Burger")
-const navToggle = $('#navToggle')
-const nav = $('#nav')
-
-navToggle.on('click', function (event) {
-	event.preventDefault()
-	nav.toggleClass('show')
-})
-
-//Icon transformation
-$(document).ready(function () {
-	$('.header__burger').click(function (event) {
-		$('.header__burger, #nav').toggleClass('active')
-	})
-})
-/*==========================================*/
-
-//Button Up
-function backToTop() {
-	let button = $('.back-to-top')
-
-	$(window).on('scroll', () => {
-		if ($(this).scrollTop() >= 50) {
-			button.fadeOut()
-		} else {
-			button.fadeIn()
-		}
-	})
-	button.on('click', (e) => {
-		e.preventDefault()
-		$('html').animate({ scrollTop: 0 }, 1000)
-	})
-}
-
-backToTop()
-/*==========================================*/
-
-//Close modal window with button "Esc" (JS)
-// document.addEventListener('keydown', function (e) {
-// 	if (e.key === 'Escape') {
-// 		//ваша функция закрытия окна
-
-// 	}
-// })

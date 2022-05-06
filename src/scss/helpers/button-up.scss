@@ -6,11 +6,11 @@
 	height: 50px;
 	background-color: transparent;
 	border-radius: 50%;
-	border: 2px solid #000;
+	border: 1px solid #000;
 	background-color: rgba($gray-light, 0.5);
 	display: none;
 	&:hover,
-	&:focus {
+	&:focus, &:active {
 		filter: brightness .5;
 		outline: none;
 	}
@@ -23,8 +23,8 @@
 		transform: translate(-50%, -50%);
 	}
 	&::before {
-		width: 5px;
-		height: 25px;
+		width: 2px;
+		height: 20px;
 		border-top-left-radius: 3px;
 		border-top-right-radius: 3px;
 		background-color: #000;
@@ -33,7 +33,7 @@
 		width: 15px;
 		height: 15px;
 		transform: translate(-50%, -50%) rotate(45deg);
-		border-top: 5px solid #000;
-		border-left: 5px solid #000;
+		border-top: 2px solid #000;
+		border-left: 2px solid #000;
 	}
 }

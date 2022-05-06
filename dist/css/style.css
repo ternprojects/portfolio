@@ -73,11 +73,11 @@ p {
   height: 50px;
   background-color: transparent;
   border-radius: 50%;
-  border: 2px solid #000;
+  border: 1px solid #000;
   background-color: rgba(141, 141, 142, 0.5);
   display: none;
 }
-.back-to-top:hover, .back-to-top:focus {
+.back-to-top:hover, .back-to-top:focus, .back-to-top:active {
   filter: brightness 0.5;
   outline: none;
 }
@@ -89,8 +89,8 @@ p {
   transform: translate(-50%, -50%);
 }
 .back-to-top::before {
-  width: 5px;
-  height: 25px;
+  width: 2px;
+  height: 20px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   background-color: #000;
@@ -99,8 +99,8 @@ p {
   width: 15px;
   height: 15px;
   transform: translate(-50%, -50%) rotate(45deg);
-  border-top: 5px solid #000;
-  border-left: 5px solid #000;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
 }
 
 @font-face {
@@ -138,6 +138,27 @@ p {
   font-weight: 400;
   font-style: normal;
 }
+.burger {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background: none;
+  display: none;
+}
+.burger__icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .burger {
+    display: block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+}
+
 .header__burger {
   display: none;
 }
@@ -169,11 +190,11 @@ p {
   .header__burger:before {
     top: 0;
   }
-  .header__burger:after {
-    bottom: 0;
-  }
   .header__burger.active span {
     transform: scale(0);
+  }
+  .header__burger:after {
+    bottom: 0;
   }
   .header__burger.active::before {
     transform: rotate(45deg);
@@ -183,6 +204,57 @@ p {
     transform: rotate(-45deg);
     bottom: 8px;
   }
+}
+
+.accordeon {
+  margin: 25px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordeon__control {
+  display: block;
+  padding: 3px 10px;
+  background-color: #6a696b;
+  color: #fff;
+}
+
+.accordeon__control::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  border-width: 1px 1px 0 0;
+  transform: translateY(-25%) rotate(135deg);
+}
+
+.accordeon__panel {
+  display: none;
+  padding: 10px;
+  background-color: #1a65ae;
+  color: #fff;
+}
+
+.accordeon__control:hover,
+.accordeon__control:focus {
+  background-color: rgba(26, 101, 174, 0.7);
+  outline: none;
+}
+
+.accordeon__control_active {
+  background-color: #1a65ae;
+  border-bottom: 1px solid #19365f;
+}
+
+.accordeon__control_active:before {
+  transform: translateY(25%) rotate(-45deg);
+}
+
+.accordeon__panel_active {
+  display: block;
 }
 
 .header {
@@ -210,6 +282,12 @@ p {
 }
 .header .user__avatar img {
   width: 65px;
+}
+@media (max-width: 565px) {
+  .header .user__avatar img {
+    width: 50px;
+    margin-top: 10px;
+  }
 }
 .header .user__content {
   padding: 9px;
@@ -249,13 +327,13 @@ p {
   }
   .nav.show {
     display: flex;
-    width: 30%;
+    width: 50%;
     background-color: #ccc;
   }
 }
 @media (max-width: 767px) and (max-width: 565px) {
   .nav.show {
-    width: 50%;
+    width: 100%;
   }
 }
 .nav__link {
@@ -324,7 +402,7 @@ p {
 }
 .intro__inner {
   display: flex;
-  padding-top: 6.6rem;
+  padding-top: 4rem;
   padding-bottom: 8rem;
   position: relative;
   border-bottom: 1px solid rgba(106, 105, 107, 0.3);
@@ -390,8 +468,8 @@ p {
 }
 .intro__photo {
   position: absolute;
-  right: 40px;
-  top: 5px;
+  right: 0px;
+  top: -10px;
   width: 500px;
   height: auto;
   z-index: 1;
@@ -399,13 +477,13 @@ p {
 @media (max-width: 991px) {
   .intro__photo {
     right: 50px;
-    top: 0px;
-    width: 340px;
+    top: -10px;
+    width: 350px;
   }
 }
 @media (max-width: 767px) {
   .intro__photo {
-    right: 10px;
+    right: 5px;
     top: 70px;
     width: 40%;
   }
@@ -771,9 +849,9 @@ p {
     width: 45%;
   }
   .about__content .btn:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
-  .about__content .btn:not(:first-child) {
+  .about__content .btn:last-child {
     margin-left: 20px;
   }
 }
@@ -1686,12 +1764,13 @@ p {
 }
 
 .contact {
-  background: url("../img/mail.png") 95% center no-repeat;
+  background: url("../img/mail.png") right center no-repeat;
   display: flex;
+  margin-right: 20px;
 }
 @media (max-width: 991px) {
   .contact {
-    background: none;
+    background-image: none !important;
   }
 }
 .contact__left {

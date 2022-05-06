@@ -86,9 +86,9 @@
 			@media ($mobile) {
 				width: 45%;
 				&:not(:last-child) {
-					margin-bottom: 20px;
+					margin-bottom: 30px;
 				}
-				&:not(:first-child) {
+				&:last-child {
 					margin-left: 20px;
 				}
 			}

@@ -4,7 +4,7 @@
 	}
 	&__inner {
 		display: flex;
-		padding-top: 6.6rem;
+		padding-top: 4rem;
 		padding-bottom: 8rem;
 		position: relative;
 		// background: url('../img/symbols.png') right top no-repeat;
@@ -57,18 +57,18 @@
 	}
 	&__photo {
 		position: absolute;
-		right: 40px;
-		top: 5px;
+		right: 0px;
+		top: -10px;
 		width: 500px;
 		height: auto;
 		z-index: 1;
 		@media ($tablet) {
 			right: 50px;
-			top: 0px;
-			width: 340px;
+			top: -10px;
+			width: 350px;
 		}
 		@media ($mobile) {
-			right: 10px;
+			right: 5px;
 			top: 70px;
 			width: 40%;
 		}
