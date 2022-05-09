@@ -1,23 +1,24 @@
 .accordeon {
-	margin: 25px;
+	margin: 25px 0 25px 0;
 	border: 1px solid transparent;
-	border-radius: 10px;
+	border-radius: 15px;
 	overflow: hidden;
 }
 
 .accordeon__control {
 	display: block;
-	padding: 3px 10px;
-	//background-color: #19365f;
-	background-color: $gray;
+	padding: 10px 10px;
+	background-color: $gray-light;
 	color: #fff;
+	border: 1px solid #ccc;
+	font-size: 1.2rem;
 }
 
 .accordeon__control::before {
 	content: '';
 	display: inline-block;
-	width: 10px;
-	height: 10px;
+	width: 15px;
+	height: 15px;
 	margin-right: 10px;
 	border: 1px solid #fff;
 	border-width: 1px 1px 0 0;
@@ -27,19 +28,21 @@
 .accordeon__panel {
 	display: none;
 	padding: 10px;
-	background-color: #1a65ae;
-	color: #fff;
+	background-color: #ccc;
+	color: $gray;
+	font-size: 0.9rem;
+	line-height: 1.4;
 }
 
 .accordeon__control:hover,
 .accordeon__control:focus {
-	background-color: rgba(26, 101, 174, 0.7);
+	background-color: $gray;
 	outline: none;
 }
 
 .accordeon__control_active {
-	background-color: #1a65ae;
-	border-bottom: 1px solid #19365f;
+	background-color: $gray;
+	border-bottom: 2px solid $white;
 }
 
 .accordeon__control_active:before {

@@ -9,31 +9,12 @@ const swiper = new Swiper();
 
 import './modules/button-up.js'
 import './modules/burger-menu.js'
-import './modules/accordeon.js';
+import './modules/accordeon.js'
+import './modules/filter.js'
 
 $(function () {
 	/*Slider*/
 	const worksSlider = $('[data-slider="slick"]')
-	/*Filter*/
-	let filter = $('[data-filter]')
-	filter.on('click', function (event) {
-		event.preventDefault()
-		let cat = $(this).data('filter')
-
-		if (cat === 'all') {
-			$('[data-cat]').removeClass('hide')
-		} else {
-			$('[data-cat]').each(function () {
-				let workCat = $(this).data('cat')
-				if (workCat != cat) {
-					$(this).addClass('hide')
-				} else {
-					$(this).removeClass('hide')
-				}
-			})
-		}
-	})
-	/*==========================================*/
 
 	//Modal Windows
 	const modalCall = $('[data-modal]')
@@ -99,6 +80,8 @@ $(function () {
 		fade: true,
 		arrows: false,
 		dots: true,
+		autoplay: true,
+		autoplaySpeed: 3000
 	})
 	/*==========================================*/
 
@@ -116,3 +99,7 @@ $(function () {
 	})
 })
 /*==========================================*/
+
+// $('.work__image').on('click', function (e) {
+// 	$('$main').css('filter', 'blur(5px)')
+// })
