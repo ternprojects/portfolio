@@ -94,11 +94,14 @@
 					color: $black;
 				}
 			}
+			&:valid {
+				border-color: green;
+			}
 			&:invalid {
 				border-color: red;
 			}
 			&:not(:focus):invalid {
-				border-color: $gray;
+				border-color: red;
 			}
 			@media ($tablet) {
 				width: 360px;

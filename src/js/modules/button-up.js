@@ -1,4 +1,3 @@
-//Button Up
 export function backToTop() {
 	let button = $('.back-to-top')
 

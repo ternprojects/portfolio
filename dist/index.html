@@ -11,6 +11,8 @@
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 	<!-- Подключение CSS -->
 	<link rel="stylesheet" href="css/style.min.css" />
+	<!-- Подключение анимации WOW -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<!-- Кодировка страницы -->
 	<!-- С появлением HTML5 можно использовать  -->
 	<meta charset="UTF-8" />
@@ -58,19 +60,20 @@
 		<div class="header__inner">
 			<div class="user">
 				<div class="user__avatar">
-					<a href="#"><img src="img/logo.png" alt="Picture with Bug"></a>
+					<a href="#"><img class="animate__animated animate__swing" src="img/logo.png" alt="Picture with Bug"></a>
 				</div>
 				<div class="user__content">
-					<div class="user__name">Yurii<br>Dubenuik</div>
-					<div class="user__prof">QA Engineer</div>
+					<div class="user__name animate__animated animate__zoomIn">Yurii<br>Dubenuik</div>
+					<div class="user__prof animate__animated animate__flipInX">QA Engineer</div>
 				</div>
 			</div>
 
 			<nav class="nav" id="nav">
-				<a class="nav__link" href="#works">Projects</a>
-				<a class="nav__link" href="#about">About me</a>
-				<a class="nav__link" href="#news">Sertificates</a>
-				<a class="nav__link nav__link--btn" href="#" data-modal="#modal_contacts">Hire me</a>
+				<a class="nav__link animate__animated animate__zoomIn" href="#works">Projects</a>
+				<a class="nav__link animate__animated animate__zoomIn" href="#about">About me</a>
+				<a class="nav__link animate__animated animate__zoomIn" href="#chrono">Chronology</a>
+				<a class="nav__link animate__animated animate__zoomIn" href="#news">Sertificates</a>
+				<a class="nav__link nav__link--btn animate__animated animate__heartBeat" href="#" data-modal="#modal_contacts">Hire me</a>
 			</nav>
 
 			<div class="header__burger" id="navToggle">
@@ -83,9 +86,9 @@
 	<div class="_container">
 		<div class="intro__inner">
 			<div class="intro__content">
-				<h2 class="intro__subtitle">Hello, I'm</h2>
-				<h1 class="intro__title">Yurii Dubeniuk</h1>
-				<div class="intro__text">QA Engineer</div>
+				<h2 class="intro__subtitle animate__animated animate__backInLeft">Hello, I'm</h2>
+				<h1 class="intro__title animate__animated animate__backInLeft">Yurii Dubeniuk</h1>
+				<div class="intro__text animate__animated animate__backInLeft">QA Engineer</div>
 				<div class="social">
 					<a class="social__link" href="https://www.linkedin.com/in/yurii-dubeniuk/" target="_blank">
 						<img src="img/icons/icons.svg#linked-in" alt="Linked-in" />
@@ -109,7 +112,25 @@
 				<a class="btn" href="#" data-modal="#modal_contacts">Hire me</a>
 				<button class="btn" type="button" data-modal="#modal_cv">See my resume</button>
 			</div>
-			<a href="http://www.freepik.com" target="_blank"><img class="intro__photo" src="img/work.png" title="Designed by stories / Freepik" alt="Work" /></a>
+
+			<!-- Picture of the slider -->
+			<!-- <div data-slider="slick">
+				<div>
+					<a href="https://www.udemy.com/certificate/UC-41d87827-1f30-4f90-b057-be68cc075eba" target="_blank"><img class="modal-work__photo" src="img/sertificates/qa-2017/qa_full.jpg" width="300"
+							alt="" title="Go to the sertificate online"></a>
+				</div> -->
+			<!-- <div>
+					<a href="https://www.udemy.com/certificate/UC-41d87827-1f30-4f90-b057-be68cc075eba" target="_blank"><img class="modal-work__photo" src="img/sertificates/git/git_full_r.jpg" width="300"
+							alt="" title="Go to the sertificate online"></a>
+				</div> -->
+			<!-- <div>
+										<img class="modal-work__photo" src="https://via.placeholder.com/780x780/000" alt="">
+									</div>  -->
+			<!-- </div> -->
+
+			<a href="https://www.freepik.com/free-vector/operating-system-concept-illustration_8497398.htm#query=qa&position=3&from_view=search" target="_blank"><img class="intro__photo" src="img/stop-war.png"
+					title="Designed by stories / Freepik" alt="Work" /></a>
+
 		</div>
 		<!--/.intro__inner -->
 	</div>
@@ -147,25 +168,76 @@
 </section>
 		<div class="_container">
 	<div id="accordeon">
+		<a name="chrono"></a>
 		<span>Experience</span>
 		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nisi sed incidunt, autem temporibus praesentium doloribus odio laboriosam doloremque quas illo cupiditate laborum dolore adipisci
-			provident corrupti aliquid, delectus voluptas.
+			<h4><span class="upper">Company:</span> <a href="https://www.utest.com/" target="_blank">uTest</a> / <a href="https://test.io/" target="_blank">Test.io,</a> Self-development, Freelance</h4>
+			<h4><span class="upper">Position:</span> Manual QA Engineer</h4>
+			<h4><span class="upper">Date:</span> May, 2021 - at this day</h4>
+			<ul>
+				<li>Functional, ui/ux, web-testing, mobile-testing, exploratory testing, re-test;</li>
+				<li>Localization and tracking the life cycle of found bugs;</li>
+				<li>Working with test-cases/bug reports;</li>
+				<li>Work with SRS/BRD;</li>
+				<li>Work with Log-files;</li>
+				<li>Reporting on the work done.</li>
+			</ul>
+			<div class="line"></div>
+			<h4><span class="upper">Company:</span><a href="https://alfabank.ua/" target="_blank">Alfa-Bank Ukraine</a></h4>
+			<h4><span class="upper">Position:</span> Middle Manual QA Engineer</h4>
+			<h4><span class="upper">Date:</span> September, 2021 - December, 2021</h4>
+			<ul>
+				<li>Functional/Integration/Smoke testing;</li>
+				<li>Localization and elimination of bugs;</li>
+				<li>Working with test-cases/test-suites/checklists/bug-reports;</li>
+				<li>Work with SRS/BRD;</li>
+				<li>Work with Log-files;</li>
+				<li>Reporting on the work done.</li>
+			</ul>
+			<div class="line"></div>
+			<h4><span class="upper">Company:</span> <a href="https://goit.ua/">GoIt</a></h4>
+			<h4><span class="upper">Position:</span> Junior Manual QA Engineer</h4>
+			<h4><span class="upper">Date:</span> October, 2020 - August, 2021</h4>
+			<ul>
+				<li>Manual testing of web services (platforms for online learning with gamification,
+					chat-bots in Telegram);</li>
+				<li>Teamwork in Jira;</li>
+				<li>Working with checklists, test-cases, test-suites, bug-reports;</li>
+				<li>Work on sprints in Agile (Scrum);</li>
+				<li>Localization and tracking of the life cycle of found defects;</li>
+				<li>Development and implementation of product specification (backlog: user-story)</li>
+				<li>Analysis and reporting.</li>
+			</ul>
+			<div class="line"></div>
+			<h4><span class="upper">Company:</span> <a href="https://test.io/" target="_blank">Test.io</a>, Self-development, Freelance</h4>
+			<h4><span class="upper">Position:</span> Intern Manual QA, layout (HTML/CSS)</h4>
+			<h4><span class="upper">Date:</span> August, 2018 - October, 2020</h4>
+			<ul>
+				<li>Manual testing (OC windows, android);</li>
+				<li>Training in courses on Manual testing, Web-dev.;</li>
+				<li>Work on the Test.io crowdfunding platform;</li>
+				<li>Layout according to layouts (Photoshop/Figma);</li>
+				<li>Work with WordPress;</li>
+				<li>Content management.</li>
+			</ul>
 		</div>
 
 		<span>Education</span>
 		<div>
-			Kyiv National University of Culture<br>
-			IT-Management, bachelor’s degree
-		</div>
-		<div>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nisi sed incidunt, autem temporibus praesentium doloribus odio laboriosam doloremque quas illo cupiditate laborum dolore adipisci
-			provident corrupti aliquid, delectus voluptas.
+			<h4><span class="upper">Kyiv National University of Culture</span></h4>
+			<h4>IT-Management, bachelor’s degree</h4>
 		</div>
 
 		<span>Additional education</span>
-		<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nisi sed incidunt, autem temporibus praesentium doloribus odio laboriosam doloremque quas illo cupiditate laborum dolore adipisci
-			provident corrupti aliquid, delectus voluptas.</div>
+		<div>
+			<h4><span class="upper">Company:</span> Udemy</h4>
+			<h4><span class="upper">Speciality:</span> Manual QA, Automation QA, Web-development</h4>
+			<h4><span class="upper">Date:</span> February, 2019 - at this day</h4>
+			<div class="line"></div>
+			<h4><span class="upper">Company:</span> <a href="https://itvdn.com/ru/catalog">ITVDN</a></h4>
+			<h4><span class="upper">Speciality:</span> Manual QA, Automation QA, Web-development</h4>
+			<h4><span class="upper">Date:</span> February, 2019 - at this day</h4>
+		</div>
 	</div>
 </div>
 		<div class="works">
@@ -182,16 +254,18 @@
 
 			<div class="portfolio__col" data-cat="app" data-modal="#modal_project_1">
 				<div class="work">
-					<img class="work__image" src="img/sertificates/git/git_thumb.jpg" alt="">
+					<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 					<div class="work__content">
 						<div class="work__cat">Category: app</div>
 						<div class="work__title">
-							"Git - a complete course for beginners and not only"
-							<time class="work__date" datetime="2019-11-22 19:00">2021</time>
+							Project title
+							<time class="work__date" datetime="2019-11-22 19:00">2019</time>
 						</div>
 					</div>
 				</div>
 			</div>
+
+
 
 			<div class="portfolio__col" data-cat="website" data-modal="#modal_project_2">
 				<div class="work">
@@ -260,12 +334,11 @@
 
 			<div class="portfolio__col" data-cat="app" data-modal="#modal_project_1">
 				<div class="work">
-					<img class="work__image" src="img/sertificates/git/git_thumb.jpg" alt="">
+					<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 					<div class="work__content">
 						<div class="work__cat">Category: app</div>
-						<div class="work__title">
-							"Git - a complete course for beginners and not only"
-							<time class="work__date" datetime="2019-11-22 19:00">2021</time>
+						<div class="work__title">"QA-Start"
+							<time class="work__date" datetime="2019-11-22 19:00">2017</time>
 						</div>
 					</div>
 				</div>
@@ -277,14 +350,16 @@
 		</div>
 	</div>
 </div>
+
+
+<!--Udemy GoiT Sololearn-->
 		<div class="reviews">
 	<div class="_container">
 		<div class="reviews__item">
 			<div class="reviews__text">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolorem corporis, vitae optio error autem dolores quia ducimus corrupti. Repudiandae odio culpa ea tenetur aperiam iure,
-					pariatur excepturi dolores obcaecati.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolorem corporis, vitae optio error autem dolores quia ducimus corrupti. Repudiandae odio culpa ea tenetur aperiam iure,
-					pariatur excepturi dolores obcaecati.</p>
+				<p><b>О себе:</b> коммуникабельность, внимательность к деталям, умеренный перфекционизм, аккуратность, адекватность и не конфликтность, умение работать в команде, гибкость мышления, без
+					вредных привычек.</p>
+				<p><b>Хобби</b>: футурология, настольные игры, велопоходы.</p>
 			</div>
 			<div class="reviews__author">
 				<img class="reviews__photo" src="img/qa.png" alt="">
@@ -314,7 +389,105 @@
 					<div class="articles__header">
 						<time class="articles__date">2009</time>
 						<a href="http://www.clsg.ho.ua/" target="_blank">
-							<img class="articles__photo" src="img/projects/clsg2.jpg" alt="">
+							<img class="articles__photo" src="https://via.placeholder.com/370x227" alt="">
+						</a>
+					</div>
+					<div class="articles__content">
+						<h4 class="articles__title">
+							<a href="#">ЦБС Голосіївського р-ну</a>
+						</h4>
+						<div class="articles__cat">Верстка</div>
+						<div class="articles__text">
+
+
+
+							<div style="height:'100%'">
+								<div id="article" style="overflow:hidden">
+
+									<p>Сайт був створенний у 2009 році для для Централізованої Бібліотечної Системи Голосіївського р-ну при потребі міської Адміністрації для інформування місцян про новини району та про роботу
+										системи.
+									</p>
+									<p>Використані технології: HTML + CSS</p>
+									<p><a href="http://www.clsg.ho.ua/" target="_blank">ЦБС Голосіївського р-ну - на сайт>></a></p>
+
+								</div>
+
+
+
+
+								<!-- <div class="align"><a class="read-next" href="#">Читать далее...</a></div> -->
+								<a class="btn read-next" href="#">Read More</a>
+
+
+							</div>
+
+
+
+						</div>
+					</div>
+
+
+
+					<!-- <a class="btn" href="#">Read More</a> -->
+
+
+				</div>
+			</div> <!-- ./Articles__col -->
+
+			<div class="articles__col">
+				<div class="articles__item">
+					<div class="articles__header">
+						<time class="articles__date">10 <br> june</time>
+						<a href="#">
+							<img class="articles__photo" src="https://via.placeholder.com/370x227" alt="">
+						</a>
+					</div>
+					<div class="articles__content">
+						<h4 class="articles__title">
+							<a href="#">Ten the best app in 2007</a>
+						</h4>
+						<div class="articles__cat">Category</div>
+						<div class="articles__text">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nihil sequi cupiditate, nulla ad accusantium commodi ea. Rerum vitae porro magni quas delectus impedit, cupiditate atque
+								nam aspernatur corporis assumenda!
+							</p>
+						</div>
+					</div>
+					<a class="btn" href="#">Read More</a>
+				</div>
+			</div> <!-- ./Articles__col -->
+
+			<div class="articles__col">
+				<div class="articles__item">
+					<div class="articles__header">
+						<time class="articles__date">10 <br> june</time>
+						<a href="#">
+							<img class="articles__photo" src="https://via.placeholder.com/370x227" alt="">
+						</a>
+					</div>
+					<div class="articles__content">
+						<h4 class="articles__title">
+							<a href="#">Ten the best app in 2007</a>
+						</h4>
+						<div class="articles__cat">Category</div>
+						<div class="articles__text">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nihil sequi cupiditate, nulla ad accusantium commodi ea. Rerum vitae porro magni quas delectus impedit, cupiditate atque
+								nam aspernatur corporis assumenda!
+							</p>
+						</div>
+					</div>
+					<a class="btn" href="#">Read More</a>
+				</div>
+			</div> <!-- ./articles__col -->
+
+			<div class="articles__col">
+				<div class="articles__item">
+					<div class="articles__header">
+						<time class="articles__date">2009</time>
+						<a href="http://www.clsg.ho.ua/" target="_blank">
+							<img class="articles__photo" src="https://via.placeholder.com/370x227" alt="">
 						</a>
 					</div>
 					<div class="articles__content">
@@ -380,15 +553,14 @@
 					<a class="btn" href="#">Read More</a>
 				</div>
 			</div> <!-- ./articles__col -->
-		</div> <!-- ./articles -->
 
+		</div> <!-- ./articles -->
 		<div class="news__footer">
 			<a class="news__link" href="#">See more posts...</a>
 		</div>
-
 	</div> <!-- ./container -->
 </section>
-		<div class="modal" id="modal_project_1">
+		<div class="modal" id="modal_project_7">
 	<div class="modal__dialog">
 		<button class="modal__close" type="button" data-close>
 			<img src="img/icons/icons.svg#modal-close" alt="Close" />
@@ -398,11 +570,12 @@
 				<!-- Picture of the slider -->
 				<div data-slider="slick">
 					<div>
-						<a href="https://www.udemy.com/certificate/UC-41d87827-1f30-4f90-b057-be68cc075eba" target="_blank"><img class="modal-work__photo" src="img/sertificates/git/git_full_e.jpg" alt="" title="Go to the sertificate online"></a>
+						<a href="https://www.udemy.com/certificate/UC-41d87827-1f30-4f90-b057-be68cc075eba" target="_blank"><img class="modal-work__photo" src="https://via.placeholder.com/780x780/000" alt=""
+								title="Go to the sertificate online"></a>
 					</div>
-					<div>
+					<!-- <div>
 						<a href="https://www.udemy.com/certificate/UC-41d87827-1f30-4f90-b057-be68cc075eba" target="_blank"><img class="modal-work__photo" src="img/sertificates/git/git_full_r.jpg" alt="" title="Go to the sertificate online"></a>
-					</div>
+					</div> -->
 					<!-- <div>
 						<img class="modal-work__photo" src="https://via.placeholder.com/780x780/000" alt="">
 					</div>  -->
@@ -411,9 +584,9 @@
 			</div>
 			<div class="modal-work__content">
 				<div class="modal-work__header">
-					<h3 class="modal-work__title">"Git - a complete course for beginners and not only"</h3>
+					<h3 class="modal-work__title"><a href=" https://prog.academy/qa" target="_blank" title="Go to the IT-School">"QA-Start"</h3>
 					<div class="modal-work__info">
-						Web-dev/QA<span clasa="modal-work__info-divider"> | </span> 2021
+						QA<span clasa="modal-work__info-divider"> | </span> 2021
 					</div>
 				</div>
 				<!-- <div class="modal-work__client">
@@ -421,15 +594,13 @@
 					<div class="modal-work__client-company">Udemy</div>
 				</div> -->
 				<div class="modal-work__text">
-					<p>Git is the most essential developer tool. Whether you're working for a large company, an ambitious startup, or working with a friend on a personal project, having a strong knowledge of git is sure to
-					come in handy. git is probably the only tool that is so widely used in the software development industry around the world. and this is understandable, because wherever teamwork is required on a single
-					project, git is the gold standard.</p>
-					<p>This course is suitable for those people who do not know anything about git and would like to learn it from scratch. however, the course will also be useful to those people who use git on a daily
-					basis in their work, but would like to gain more confidence in managing this tool. often developers who use git on a daily basis do not have a deep understanding of how this version control system
-					works. therefore, in this course, all aspects of the git device are understood in the most thorough and detailed way.</p>
-					<p><a href="https://www.udemy.com/course/git-alishev/" target="_blank" title="Go to the course">Go to the course>></a></p>
+					<p>
+						QA - quality assurance. Tester - a specialist who takes part in testing a component or system. His duty is to search for possible errors and failures in the functioning of the program. the
+						tester imulates various situations that may arise during the use of the test item so that developers can correct the detected errors.
+					</p>
+					<p><a href="https://prog.academy/" target="_blank">Go to the IT-School>></a></p>
 				</div>
-				<div class="modal-work__footer">
+				<!-- <div class="modal-work__footer">
 					<button class="modal-work__btn modal-work__btn--prev slickPrev">
 						<img src="img/icons/icons.svg#left-arrow" alt="Previous" />
 						Previous
@@ -437,7 +608,7 @@
 					<button class="modal-work__btn modal-work__btn--next slickNext">Next
 						<img src="img/icons/icons.svg#right-arrow" alt="Next" />
 					</button>
-				</div>
+				</div> -->
 			</div> <!-- /.modal-work__content -->
 		</div> <!-- /.modal-work -->
 	</div> <!-- /.modal__dialog -->
@@ -692,6 +863,56 @@
 		</div> <!-- /.modal-work -->
 	</div> <!-- /.modal__dialog -->
 </div> <!-- /.modal -->
+		<div class="modal" id="modal_project_1">
+	<div class="modal__dialog">
+		<button class="modal__close" type="button" data-close>
+			<img src="img/icons/icons.svg#modal-close" alt="Close" />
+		</button>
+		<div class="modal-work">
+			<div class="modal-work__preview">
+				<!-- Picture of the slider -->
+				<div data-slider="slick">
+					<div>
+						<img class="modal-work__photo" src="https://via.placeholder.com/780x780/000" alt="">
+					</div>
+					<!-- <div>
+						<img class="modal-work__photo" src="https://via.placeholder.com/770x780/333" alt="">
+					</div>
+					<div>
+						<img class="modal-work__photo" src="https://via.placeholder.com/770x780/000" alt="">
+					</div> -->
+				</div>
+				<!-- =============================================================================== -->
+			</div>
+			<div class="modal-work__content">
+				<div class="modal-work__header">
+					<h3 class="modal-work__title">Project title 7</h3>
+					<div class="modal-work__info">
+						categoty <span clasa="modal-work__info-divider"> | </span> 2018
+					</div>
+				</div>
+				<div class="modal-work__client">
+					<div class="modal-work__client-title">Client:</div>
+					<div class="modal-work__client-company">Creative Agency</div>
+				</div>
+				<div class="modal-work__text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, esse. Quasi omnis tempora cupiditate cumque saepe incidunt veniam cum ipsa debitis, eligendi laborum aspernatur expedita
+						optio
+						facilis ullam voluptates blanditiis!</p>
+				</div>
+				<div class="modal-work__footer">
+					<button class="modal-work__btn modal-work__btn--prev slickPrev">
+						<img src="img/icons/icons.svg#left-arrow" alt="Previous" />
+						Previous
+					</button>
+					<button class="modal-work__btn modal-work__btn--next slickNext">Next
+						<img src="img/icons/icons.svg#right-arrow" alt="Next" />
+					</button>
+				</div>
+			</div> <!-- /.modal-work__content -->
+		</div> <!-- /.modal-work -->
+	</div> <!-- /.modal__dialog -->
+</div> <!-- /.modal -->
 		<div class="modal" id="modal_cv">
 	<div class="modal__dialog">
 		<button class="modal__close" type="button" data-close>
@@ -894,6 +1115,62 @@
 	<!--/.modal__dialog -->
 </div>
 <!--/.modal -->
+
+		<a href="#" class="back-to-top"></a>
+
+		<div class="_container">
+					<div style="height:'100%'">
+						<div id="article" style="overflow:hidden">
+							<p>
+								Товарищи! консультация с широким активом требуют
+								определения и уточнения существенных финансовых и
+								административных условий. Не следует, однако
+								забывать, что укрепление и развитие структуры
+								влечет за собой процесс внедрения и модернизации
+								направлений прогрессивного развития.
+								Разнообразный и богатый опыт начало повседневной
+								работы по формированию позиции позволяет оценить
+								значение форм развития. Товарищи! начало
+								повседневной работы по формированию позиции
+								позволяет выполнять важные задания по разработке
+								форм развития. Товарищи! сложившаяся структура
+								организации требуют от нас анализа систем
+								массового участия. Таким образом новая модель
+								организационной деятельности позволяет оценить
+								значение позиций, занимаемых участниками в
+								отношении поставленных задач. Разнообразный и
+								богатый опыт постоянное
+								информационно-пропагандистское обеспечение нашей
+								деятельности способствует подготовки и
+								реализации модели развития
+							</p>
+							<p>
+								Товарищи! консультация с широким активом требуют
+								определения и уточнения существенных финансовых и
+								административных условий. Не следует, однако
+								забывать, что укрепление и развитие структуры
+								влечет за собой процесс внедрения и модернизации
+								направлений прогрессивного развития.
+								Разнообразный и богатый опыт начало повседневной
+								работы по формированию позиции позволяет оценить
+								значение форм развития. Товарищи! начало
+								повседневной работы по формированию позиции
+								позволяет выполнять важные задания по разработке
+								форм развития. Товарищи! сложившаяся структура
+								организации требуют от нас анализа систем
+								массового участия. Таким образом новая модель
+								организационной деятельности позволяет оценить
+								значение позиций, занимаемых участниками в
+								отношении поставленных задач. Разнообразный и
+								богатый опыт постоянное
+								информационно-пропагандистское обеспечение нашей
+								деятельности способствует подготовки и
+								реализации модели развития</p>
+						</div>
+						<div class="align"><a class="read-next" href="#">Читать далее...</a></div>
+					</div>
+				</div>
+
 	</main>
 	<footer class="footer">
 	<div class="_container">
@@ -934,11 +1211,8 @@
 	</div>
 
 </footer>
-	<a href="#" class="back-to-top"></a>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	<script src="js/modules/slick.min.js"></script>
 	<script src="js/app.min.js"></script>
 </body>
 

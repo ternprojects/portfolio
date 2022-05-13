@@ -6,11 +6,11 @@ flsFunctions.isWebp()
 import Swiper, { Navigation, Pagination } from 'swiper';
 const swiper = new Swiper();
 */
-
 import './modules/button-up.js'
 import './modules/burger-menu.js'
 import './modules/accordeon.js'
 import './modules/filter.js'
+import './modules/read-more.js'
 
 $(function () {
 	/*Slider*/
@@ -81,7 +81,7 @@ $(function () {
 		arrows: false,
 		dots: true,
 		autoplay: true,
-		autoplaySpeed: 3000
+		autoplaySpeed: 3000,
 	})
 	/*==========================================*/
 

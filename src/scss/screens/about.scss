@@ -10,13 +10,17 @@
 	}
 	&__photo,
 	&__content {
-		width: 50%;
+		// width: 50%;
 		@media ($tablet) {
 			width: 100%;
 		}
 	}
 	&__photo {
 		position: relative;
+		width: 40%;
+		@media ($tablet) {
+			width: 100%;
+		}
 		img {
 			position: absolute;
 			width: 380px;
@@ -26,9 +30,9 @@
 			left: 2rem;
 			box-shadow: -34px 36px rgba(43, 42, 44, 0.15);
 			@media ($tablet) {
-				width: 250px;
-				height: 250px;
-				bottom: 2px;
+				width: 280px;
+				height: 280px;
+				top: 0px;
 			}
 			@media ($mobile-sm) {
 				width: 200px;
@@ -69,6 +73,7 @@
 		}
 	}
 	&__content {
+		width: 60%;
 		padding-left: 3.2rem;
 		@media ($tablet) {
 			order: 1;
@@ -78,6 +83,7 @@
 			max-width: 800px;
 			margin-left: auto;
 			margin-right: auto;
+			width: 100%;
 		}
 		.btn {
 			@include btn;
@@ -145,7 +151,7 @@
 	}
 }
 
-//For text about...
+//For text About...
 .about__text a {
 	color: #000;
 	font-weight: 700;

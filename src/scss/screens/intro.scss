@@ -58,13 +58,12 @@
 	&__photo {
 		position: absolute;
 		right: 0px;
-		top: -10px;
+		top: 40px;
 		width: 500px;
 		height: auto;
 		z-index: 1;
 		@media ($tablet) {
 			right: 50px;
-			top: -10px;
 			width: 350px;
 		}
 		@media ($mobile) {
