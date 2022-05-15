@@ -106,15 +106,36 @@
 			}
 		}
 	}
-	.news__footer {
-		text-align: right;
-	}
-	&__link {
-		font-size: 0.94rem;
-		color: $gray;
-		text-decoration: underline;
-		&:hover {
-			text-decoration: none;
-		}
+	// &__footer {
+	// 	text-align: right;
+	// }
+	// &__link {
+	// 	font-size: 0.94rem;
+	// 	color: $gray;
+	// 	text-decoration: underline;
+	// 	&:hover {
+	// 		text-decoration: none;
+	// 	}
+	//}
+}
+
+#more,
+#more1,
+#more2,
+#more3,
+#more4,
+#more5,
+#more6,
+#more7 {
+	display: none;
+	width: 100%;
+}
+
+#btn {
+	display: block;
+	margin: 0 auto;
+	margin-top: 25px;
+	@media ($mobile) {
+		min-width: 220px;
 	}
 }
