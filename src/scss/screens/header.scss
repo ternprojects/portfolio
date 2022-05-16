@@ -17,9 +17,9 @@
 	//User - left-side
 	.user {
 		display: flex;
-		&__avatar {
+		&__logo {
 			img {
-				width: 65px;
+				// width: 65px;
 				@media ($mobile-sm) {
 					width: 50px;
 					margin-top: 10px;

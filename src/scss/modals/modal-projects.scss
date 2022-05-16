@@ -46,7 +46,7 @@
 		}
 	}
 	&-work__preview {
-		width: 65%;
+		width: 55%;
 		position: relative;
 		@media ($mobile-sm) {
 			margin: 0 auto;
@@ -61,9 +61,15 @@
 		}
 	}
 	&-work__content {
-		width: 35%;
+		width: 45%;
 		padding: 3.4rem 6.6rem 1rem 1.73rem;
 		position: relative;
+		p {
+			color: $gray;
+		}
+		a {
+			color: $gray;
+		}
 		@media ($tablet) {
 			padding: 3.4rem 1rem 1rem 1rem;
 		}
@@ -81,10 +87,10 @@
 	}
 	&-work__title {
 		margin-bottom: 1rem;
-		font-size: 2.12rem;
+		font-size: 2rem;
 		color: $black;
 		font-weight: 700;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		@media ($mobile) {
 			font-size: 1.5rem;
 		}
@@ -92,7 +98,7 @@
 	&-work__info {
 		font-size: 1.2rem;
 		color: $gray;
-		text-transform: uppercase;
+		// text-transform: uppercase;
 	}
 	&-work__client {
 		margin-bottom: 2.2rem;

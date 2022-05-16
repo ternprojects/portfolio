@@ -34,10 +34,17 @@
 		flex-wrap: wrap;
 		margin: 0 -1rem;
 		&__col {
-			width: 33.3333%;
+			// width: 33.3333%;
+			flex-basis: 33.3333%;
 			padding: 0 1rem;
-			@media ($tablet) {
-				width: 100%;
+			// @media ($tablet) {
+			// 	width: 100%;
+			// }
+			@media ($mobile) {
+				flex-basis: 50%;
+			}
+			@media ($mobile-sm) {
+				flex-basis: 100%;
 			}
 		}
 		&__item {
@@ -119,6 +126,7 @@
 	//}
 }
 
+//For text appearance
 #more,
 #more1,
 #more2,
