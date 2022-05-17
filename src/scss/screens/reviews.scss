@@ -16,15 +16,25 @@
 	}
 	&__author {
 		width: 100%;
+		//My settings
 		max-width: 1200px;
+		//
 		text-align: center;
 		position: absolute;
+		//My settings
 		top: 120%;
+		//
+		// top: 100%
+		// left: 0;
+		//My settings
 		left: 50%;
 		transform: translate(-50%, -50%);
+		//
 		z-index: 1;
 		margin-top: -51px;
+		//My settings
 		display: flex;
+		//
 	}
 	// &__photo {
 	// 	display: block;
@@ -34,6 +44,7 @@
 	// 	height: 103px;
 	// 	border: 4px solid #efefef;
 	// }
+	//My settings
 	&__ukr,
 	&__en,
 	&__ru {
@@ -54,6 +65,7 @@
 	&__en-language {
 		margin-top: 10px;
 	}
+	//
 	// &__name {
 	// 	margin-bottom: 0.3rem;
 	// 	font-size: 1.06rem;
