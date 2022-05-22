@@ -3,7 +3,6 @@
 <!-- Оболочка документа, указываем язык содержимого -->
 <html lang="en">
 @@include('html/head.html',{ "title":"QA Service" })
-
 <!-- Отображаемое тело страницы -->
 
 <body>
@@ -12,11 +11,11 @@
 		@@include('html/screens/intro.html',{})
 		@@include('html/screens/about.html',{})
 		@@include('html/screens/accordeon.html',{})
-		@@include('html/screens/works.html',{})
+		@@include('html/screens/sertificates.html',{})
 		@@include('html/screens/reviews.html',{})
 		@@include('html/screens/projects.html',{})
-		@@include('html/modals/sertificates/git-2021.html',{})
-		@@include('html/modals/sertificates/project_2.html',{})
+		@@include('html/modals/sertificates/Udemy-git-2021.html',{})
+		@@include('html/modals/sertificates/Udemy-jMeter-2021.html',{})
 		@@include('html/modals/sertificates/project_3.html',{})
 		@@include('html/modals/sertificates/project_4.html',{})
 		@@include('html/modals/sertificates/project_5.html',{})
@@ -27,8 +26,13 @@
 		<a href="#" class="back-to-top"></a>
 	</main>
 	@@include('html/screens/footer.html',{})
+	<!--Подключение jQuery-->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!--Подключение Swiper Slider-->
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<!--Подключение Slick-Slider-->
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<!--Подключение скриптов-->
 	<script src="js/app.min.js"></script>
 </body>
 

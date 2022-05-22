@@ -1,0 +1,232 @@
+/* Слайдер */
+// .slick-slider {}
+
+/* Слайдер запущен */
+// .slick-slider.slick-initialized{}
+
+/* Слайдер с точками */
+// .slick-slider.slick-dotted{}
+
+/* Ограничивающая оболочка */
+// .slick-list {
+// 	overflow: hidden;
+// }
+
+/* Лента слайдов */
+// .slick-track {
+// 	display: flex;
+// 	align-items: flaex-start;
+// }
+
+/* Слайд */
+// .slick-slide {}
+/* Слайд активный (показывается) */
+// .slick-slide.slick-active {}
+/* Слайд основной */
+// .slick-slide.slick-current{}
+/* Слайд по центру */
+// .slick-slide.slick-center{}
+/* Клонированный слайд */
+// .slick-slide.slick-cloned{}
+/* Стрелка */
+// .slick-arrow{}
+/* Стрелка влево */
+// .slick-arrow.slick-prev{}
+/* Стрелка вправо */
+// .slick-arrow.slick-next{}
+/* Стрелка не активная */
+// .slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+// .slick-dots{}
+// .slick-dots li{}
+/* Активная точка */
+// .slick-dots li.slick-active{}
+/* Элемент точки */
+// .slick-dots li button{}
+
+// .slider {
+// 	padding: 25px 50px 0 50px;
+// }
+//General settings
+// .slider .slick-arrow {
+// 	position: absolute;
+// 	top: 50%;
+// 	margin: -30px 0 0 0;
+// 	z-index: 10;
+// 	font-size: 0;
+// 	width: 60px;
+// 	height: 60px;
+// }
+
+// .slider .slick-arrow.slick-prev {
+// 	left: 0;
+// 	background: url('@img/icons/icons.svg#left-arrow') 0 0 /100% no-repeat;
+// }
+
+// .slider .slick-arrow.slick-next {
+// 	background: url('@img/icons/icons.svg#right-arrow') 0 0 /100% no-repeat;
+// 	right: 0;
+// }
+
+// /* Точки (булиты) */
+// .slider .slick-dots {
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// }
+// .slider .slick-dots li {
+// 	margin: 0px 10px 10px 0;
+// }
+// .slider .slick-dots button {
+// 	font-size: 0;
+// 	width: 10px;
+// 	height: 10px;
+// 	background-color: #ccc;
+// 	border-radius: 50%;
+// }
+
+// .slider .slick-dots li.slick-active button {
+// 	background-color: transparent;
+// 	border: solid 1px #000;
+// 	background-color: #000;
+// }
+
+/* Slider */
+
+.slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	&:focus {
+		outline: none;
+	}
+	&.dragging {
+		cursor: pointer;
+		cursor: hand;
+	}
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+	position: relative;
+	left: 0;
+	top: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+
+	.slick-loading & {
+		visibility: hidden;
+	}
+}
+
+.slick-slide {
+	float: left;
+	height: 100%;
+	min-height: 1px;
+	[dir='rtl'] & {
+		float: right;
+	}
+	img {
+		display: block;
+	}
+	&.slick-loading img {
+		display: none;
+	}
+
+	display: none;
+
+	&.dragging img {
+		pointer-events: none;
+	}
+
+	.slick-initialized & {
+		display: block;
+	}
+
+	.slick-loading & {
+		visibility: hidden;
+	}
+
+	.slick-vertical & {
+		display: block;
+		height: auto;
+		border: 1px solid transparent;
+	}
+}
+
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+//My settings
+/*==========================*/
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	bottom: 1.4rem;
+	left: 0;
+	z-index: 2;
+	li {
+		margin: 0 0.5rem;
+		&.slick-active {
+			button {
+				background: #fff;
+			}
+		}
+	}
+	button {
+		width: 11px;
+		height: 11px;
+		padding: 0;
+		background-color: #fff;
+		border: 1px solid #fff;
+		background: transparent;
+		border-radius: 50%;
+		font-size: 0;
+		color: transparent;
+		cursor: pointer;
+		&:focus {
+			outline: 0;
+		}
+	}
+}

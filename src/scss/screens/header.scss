@@ -63,7 +63,7 @@
 		&.show {
 			display: flex;
 			width: 50%;
-			background-color: #ccc;
+			background-color: $white;
 		}
 		@media ($mobile-sm) {
 			&.show {

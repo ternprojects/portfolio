@@ -1,3 +1,4 @@
 QA - quality assurance. Tester - a specialist who takes part in testing a component or system. His duty is to search for possible errors and failures in the functioning of the program. the tester imulates various situations that may arise during the use of the test item so that developers can correct the detected errors.
 
-Go to the IT-School>>
+Сайт був створенний у 2009 році для для Централізованої Бібліотечної Системи Голосіївського р-ну при потребі міської Адміністрації для інформування місцян про новини району та роботу бібліотек системи.
+													

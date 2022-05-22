@@ -1,0 +1,147 @@
+// .wrapper {
+// 	padding: 30px;
+// 	min-height: 100%;
+// }
+
+// .title {
+// 	font-size: 30px;
+// 	font-weight: 700;
+// 	color: #000;
+// 	margin: 0 0 30px 0;
+// }
+
+// .image-slider {
+// 	padding: 30px 0 70px 0;
+// }
+
+// .image-slider__wrapper {
+// }
+
+// .image-slider__slide {
+// }
+
+// .image-slider__image {
+// 	text-align: center;
+// }
+
+// .image-slider__image img {
+// 	max-width: 100%;
+// }
+
+//Первый Слайдер
+.swiper {
+	width: 500px;
+	height: 310px;
+	margin-top: -25px;
+	@media ($tablet) {
+		width: 360px;
+		height: 200px;
+	}
+	@media ($mobile) {
+		// position: absolute;
+		// left: -50%;
+		// transform: translate(50%, -50%);
+		// top: 550px;
+		display: none;
+	}
+}
+
+.swiper-slide img {
+	width: 300px;
+	height: 240px;
+	margin: 0 auto;
+	@media ($tablet) {
+		width: 360px;
+		height: 200px;
+	}
+}
+
+//Стрелки
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	color: $black;
+	font-size: 45px;
+	margin-bottom: 65px;
+}
+
+//Погинация
+.image-slider.swiper-pagination {
+	bottom: 0;
+	border: none;
+}
+
+//Буллеты
+// .image-slider .swiper-pagination-bullet {
+// 	width: 20px;
+// 	height: 20px;
+// 	line-height: 20;
+// 	font-size: 14px;
+// 	background-color: #fff;
+// 	padding: 3px;
+// }
+
+// .image-slider .swiper-pagination-bullet-active {
+// 	border: 1px #000 solid;
+// }
+
+//Фракция
+// .image-slider .swiper-pagination-fraction {
+// 	font-size: 20px;
+// 	color: #000;
+// }
+
+//Прогрессбар
+.image-slider .swiper-pagination-progressbar-fill {
+	background-color: #000;
+}
+
+//Скролл
+// .image-slider .swiper-scrollbar-drag {
+// 	cursor: pointer;
+// 	background-color: #7a956b;
+// }
+
+.swiper-scrollbar {
+	margin-bottom: -2px;
+}
+
+.swiper-slide a {
+	color: $black;
+	text-transform: uppercase;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.swiper-slide h3 {
+	text-align: center;
+	margin-top: 15px;
+	@media ($tablet) {
+		font-size: 14px;
+	}
+}
+
+//Автоширина
+.image-slider .swiper-slider {
+	width: auto;
+}
+
+//Мультирядность
+// .image-slider {
+// 	height: 700px;
+// }
+// .image-slider .swiper-slide {
+// 	height: calc((100% - 30px) / 2);
+// 	overflow: hidden;
+// }
+
+//Вертикальная ось
+// .image-slider {
+// 	padding: 0px 0 0px 0;
+// 	height: 700px;
+// }
+
+//Для эфекта Куб
+// .image-slider {
+// 	width: 600px;
+// }

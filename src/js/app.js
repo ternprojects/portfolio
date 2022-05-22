@@ -6,11 +6,13 @@ flsFunctions.isWebp()
 import Swiper, { Navigation, Pagination } from 'swiper';
 const swiper = new Swiper();
 */
+
 import './modules/button-up.js'
 import './modules/burger-menu.js'
 import './modules/accordeon.js'
 import './modules/filter.js'
 import './modules/read-more.js'
+import './modules/swiper.js'
 
 $(function () {
 	/*Slider*/
@@ -99,7 +101,3 @@ $(function () {
 	})
 })
 /*==========================================*/
-
-// $('.work__image').on('click', function (e) {
-// 	$('$main').css('filter', 'blur(5px)')
-// })

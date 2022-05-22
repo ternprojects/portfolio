@@ -7,18 +7,18 @@
 @import 'helpers/burger';
 @import 'screens/accordeon';
 
-
 //Pages
 @import 'screens/header';
 @import 'screens/intro';
-@import 'screens/works';
+@import 'screens/sertificates';
 @import 'screens/about';
 @import 'screens/reviews';
 @import 'screens/projects';
 @import 'screens/footer';
 
 //Slider
-@import 'modals/slick-slider/slider';
-@import 'modals/modal-projects';
+@import 'modals/sliders/slick';
+@import 'modals/sliders/swiper';
+@import 'modals/modal-sertificates';
 @import 'modals/modal-cv.scss';
 @import 'modals/modal-contacts';
