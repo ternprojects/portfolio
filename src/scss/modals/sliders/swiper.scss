@@ -38,10 +38,6 @@
 		height: 200px;
 	}
 	@media ($mobile) {
-		// position: absolute;
-		// left: -50%;
-		// transform: translate(50%, -50%);
-		// top: 550px;
 		display: none;
 	}
 }
@@ -144,4 +140,14 @@
 //Для эфекта Куб
 // .image-slider {
 // 	width: 600px;
+// }
+
+//Второй слайдер
+// .wrapper1 {
+// 	@media (max-width: 300000px) {
+// 		display: none;
+// 	}
+// 	@media (max-width: 767px) {
+// 		display: block;
+// 	}
 // }

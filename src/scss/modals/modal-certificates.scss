@@ -1,0 +1,183 @@
+.modal {
+	display: none;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	overflow: auto;
+	background-color: rgba($black, 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	&.show {
+		display: flex;
+	}
+	&__dialog {
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		position: relative;
+		background-color: $white;
+		//Animation open and close window
+		transform: scale(0);
+		transition: transform 0.2s linear;
+	}
+	&__close {
+		width: 34px;
+		height: 34px;
+		padding: 0;
+		background: none;
+		border: 0;
+		cursor: pointer;
+		position: absolute;
+		top: 0.9rem;
+		right: 1rem;
+		z-index: 1;
+		//Animation icon
+		transition: transform 0.2s linear;
+		&:hover {
+			transform: rotate(90deg);
+		}
+	}
+	&-work {
+		display: flex;
+		@media ($mobile-sm) {
+			flex-direction: column;
+		}
+	}
+	&-work__preview {
+		width: 55%;
+		position: relative;
+		@media ($mobile-sm) {
+			margin: 0 auto;
+			padding-top: 60px;
+			width: 90%;
+		}
+		&__photo {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: 1;
+			transform: translate3d(-50, -50%, 0);
+		}
+	}
+	&-work__content {
+		width: 45%;
+		padding: 3.4rem 6.6rem 1rem 1.73rem;
+		position: relative;
+		p {
+			color: $gray;
+		}
+		a {
+			color: $gray;
+		}
+		@media ($tablet) {
+			padding: 3.4rem 1rem 1rem 1rem;
+		}
+		@media ($mobile-sm) {
+			width: 100%;
+			flex-direction: column;
+			padding-top: 20px;
+		}
+	}
+	&-work__header {
+		margin-bottom: 2.2rem;
+		@media ($mobile-sm) {
+			text-align: center;
+		}
+	}
+	&-work__title {
+		margin-bottom: 1rem;
+		font-size: 2rem;
+		color: $black;
+		font-weight: 700;
+		// text-transform: uppercase;
+		&:hover {
+			text-decoration: underline;
+		}
+		@media ($mobile) {
+			font-size: 1.5rem;
+		}
+	}
+	&-work__info {
+		font-size: 1.2rem;
+		color: $gray;
+		// text-transform: uppercase;
+	}
+	&-work__client {
+		margin-bottom: 2.2rem;
+		@media ($mobile-sm) {
+			margin-bottom: 15px;
+		}
+	}
+	&-work__client-title {
+		margin-bottom: 0.2rem;
+		font-size: 1.06rem;
+		color: $black;
+		font-weight: 700;
+	}
+	&-work__client-company {
+		font-size: 0.94rem;
+		font-style: italic;
+		color: $gray;
+	}
+	&-work__text {
+		margin-bottom: 2rem;
+		font-size: 0.8rem;
+		color: $gray;
+		line-height: 2;
+		flex-wrap: 300;
+		@media ($mobile-sm) {
+			margin-bottom: 80px;
+		}
+	}
+	&-work__footer {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 0 1.8rem 1rem;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+	}
+	&-work__btn {
+		padding: 0;
+		background: none;
+		border: 0;
+		cursor: pointer;
+		font-family: inherit;
+		font-size: 0.94rem;
+		color: $black;
+		text-transform: uppercase;
+		position: relative;
+		&:hover::after {
+			content: '';
+			position: absolute;
+			bottom: -0.13rem;
+			left: 0;
+			width: 100%;
+			height: 0.06rem;
+			background-color: $gray;
+		}
+		img {
+			height: 20px;
+			display: inline;
+			position: absolute;
+		}
+	}
+	&-work__btn--prev img {
+		position: absolute;
+		top: -1px;
+		right: 75px;
+	}
+}
+
+.modal-work__title a {
+	color: inherit;
+}
+
+//Расстояние от палки сверху
+// .modal-work__info-divider {
+// 	margin: 0 1rem;
+// }

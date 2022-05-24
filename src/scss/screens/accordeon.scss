@@ -63,13 +63,17 @@
 }
 
 .accordeon ul li li {
-list-style: square;
+	list-style: square;
 }
 
 .accordeon h4 a {
 	color: inherit;
 	text-decoration: underline;
 }
+
+// .accordeon h4 + p {
+// 	margin: 0 0 0 0;
+// }
 
 .upper {
 	text-transform: uppercase;
