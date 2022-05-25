@@ -87,9 +87,9 @@
 // }
 
 //Прогрессбар
-.image-slider .swiper-pagination-progressbar-fill {
-	background-color: #000;
-}
+// .image-slider .swiper-pagination-progressbar-fill {
+// 	background-color: #000;
+// }
 
 //Скролл
 // .image-slider .swiper-scrollbar-drag {
@@ -143,11 +143,18 @@
 // }
 
 //Второй слайдер
-// .wrapper1 {
-// 	@media (max-width: 300000px) {
-// 		display: none;
-// 	}
-// 	@media (max-width: 767px) {
-// 		display: block;
-// 	}
-// }
+#display {
+	@media (min-width: 767px) {
+		display: none;
+	}
+	@media (max-width: 767px) {
+		display: block;
+		margin-top: 20px;
+	}
+	h3 {
+		margin-bottom: 35px;
+	}
+	@media ($mobile-sm) {
+		width: 290px;
+	}
+}

@@ -29,31 +29,29 @@
 				<button class="btn" type="button" data-modal="#modal_cv">See my resume</button>
 			</div>
 
-
-
-
-
-
-
-			<!-- Slider main container without Lazy-loading -->
+			<!-- Slider main container with Lazy-loading -->
 			<div class="swiper">
 				<!-- Additional required wrapper -->
 				<div class="swiper-wrapper">
 					<!-- Slides -->
+					<!-- Lazy image -->
 					<div class="swiper-slide">
-						<img src="@img/stop-war-in-Ukraine.jpg" width="500" height="240" alt="General Staff">
+						<img data-src="@img/stop-war-in-Ukraine.jpg" class="swiper-lazy" width="500" height="240" alt="General Staff">
+						<div class="swiper-lazy-preloader"></div>
 						<a href="https://www.facebook.com/GeneralStaff.ua" target="_blank">
 							<h3>General staff Armed Forces of Ukraine</h3>
 						</a>
 					</div>
 					<div class="swiper-slide">
-						<img src="@img/icons/icons.svg#army" width="240" height="599" alt="Army">
+						<img data-src="@img/icons/icons.svg#army" class="swiper-lazy" width="240" height="599" alt="Army">
+						<div class="swiper-lazy-preloader"></div>
 						<a href="https://bank.gov.ua/ua/about/support-the-armed-forces" target="_blank">
 							<h3>Support Armed Forces of Ukraine</h3>
 						</a>
 					</div>
 					<div class="swiper-slide">
-						<img src="@img/icons/icons.svg#humanist" width="500" height="240" alt="Humanitaries">
+						<img data-src="@img/icons/icons.svg#humanist" class="swiper-lazy" width="500" height="240" alt="Humanitaries">
+						<div class="swiper-lazy-preloader"></div>
 						<a href="https://bank.gov.ua/ua/about/humanitarian-aid-to-ukraine" target="_blank">
 							<h3>Support humanitarian aid</h3>
 						</a>
@@ -68,23 +66,50 @@
 				<!-- <div class="swiper-scrollbar"></div> -->
 			</div>
 
-
-
-
-
-
-
-
-
-
-
-
 			<!-- For use free licence Freepik -->
 			<!--
 			<a href="http://www.freepik.com">Designed by stories / Freepik</a>
 			<a href="https://www.freepik.com/free-vector/operating-system-concept-illustration_8497398.htm#query=qa&position=3&from_view=search" target="_blank"></a>-->
 			<!-- <img class="intro__photo" src="@img/stop-the-war.jpg" title="Stop-war" alt="Work" /> -->
 		</div>
+
+		<!-- Slider main container with Lazy-loading -->
+		<div class="swiper" id="display">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<!-- Lazy image -->
+				<div class="swiper-slide">
+					<img data-src="@img/stop-war-in-Ukraine.jpg" class="swiper-lazy" width="500" height="240" alt="General Staff">
+					<div class="swiper-lazy-preloader"></div>
+					<a href="https://www.facebook.com/GeneralStaff.ua" target="_blank">
+						<h3>General staff Armed Forces of Ukraine</h3>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="@img/icons/icons.svg#army" class="swiper-lazy" width="240" height="599" alt="Army">
+					<div class="swiper-lazy-preloader"></div>
+					<a href="https://bank.gov.ua/ua/about/support-the-armed-forces" target="_blank">
+						<h3>Support Armed Forces of Ukraine</h3>
+					</a>
+				</div>
+				<div class="swiper-slide">
+					<img data-src="@img/icons/icons.svg#humanist" class="swiper-lazy" width="500" height="240" alt="Humanitaries">
+					<div class="swiper-lazy-preloader"></div>
+					<a href="https://bank.gov.ua/ua/about/humanitarian-aid-to-ukraine" target="_blank">
+						<h3>Support humanitarian aid</h3>
+					</a>
+				</div>
+			</div>
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- If we need scrollbar -->
+			<!-- <div class="swiper-scrollbar"></div> -->
+		</div>
+
 		<!--/.intro__inner -->
 	</div>
 	<!--/.container -->

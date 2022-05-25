@@ -120,7 +120,7 @@ new Swiper('.swiper', {
 	//Кол.-тво дублирующих слайдов
 	// loopedSlides: 2,
 
-	//Свободній режим
+	//Свободный режим
 	freeMode: false,
 
 	//Автовоспроизведение
@@ -216,9 +216,10 @@ new Swiper('.swiper', {
 
 	//Lazy loading
 	//Отключить предзагрузку картинок
-	// preloadImages: false,
+	preloadImages: false,
 	//Lazy loading
-	// lazy: {
+	lazy: true,
+	//{
 	//Подкгружать на старте на старте переключения слайда
 	// loadOnTransitionStart: false,
 	//Подгрузить предыдущую и следующую картинки
@@ -236,5 +237,5 @@ new Swiper('.swiper', {
 	//Минимальное увеличение
 	// 	minRatio: 1,
 	// },
-	
 })
+
