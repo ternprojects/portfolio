@@ -61,65 +61,198 @@
 		height: 25px;
 		margin-right: 0.75rem;
 	}
-	.form {
-		&__group {
-			margin-bottom: 1.8rem;
-		}
-		&__label {
-			display: inline-block;
-			margin-bottom: 0.6rem;
-			font-size: 0.8rem;
-			color: $black;
-			font-weight: 700;
-		}
-		&__input,
-		&__textarea {
-			display: block;
-			width: 100%;
-			padding: 1.3rem 1.8rem;
-			font-family: inherit;
-			border: 1px solid rgba(#707070, 0.3);
-			border-radius: 1.8rem;
-			font-size: 0.8rem;
-			line-height: 1.2;
-			font-weight: 300;
-			transition: border-color 0.2s linear;
-			&::placeholder {
-				color: $black;
-			}
-			&:focus {
-				outline: none;
-				border-color: #000;
-				&::placeholder {
-					color: $black;
-				}
-			}
-			&:valid {
-				border-color: green;
-			}
-			&:invalid {
-				border-color: red;
-			}
-			&:not(:focus):invalid {
-				border-color: red;
-			}
-			@media ($tablet) {
-				width: 360px;
-				margin: 0 auto;
-			}
-			@media ($mobile-sm) {
-				max-width: 100%;
-			}
-		}
-		&__textarea {
-			height: 200px;
-			resize: none;
-		}
-		.btn {
-			@include btn;
-			@media ($mobile) {
-				width: 30%;
-			}
+	// .form {
+	// 	&__group {
+	// 		margin-bottom: 1.8rem;
+	// 	}
+	// 	&__label {
+	// 		display: inline-block;
+	// 		margin-bottom: 0.6rem;
+	// 		font-size: 0.8rem;
+	// 		color: $black;
+	// 		font-weight: 700;
+	// 	}
+	// 	&__input,
+	// 	&__textarea {
+	// 		display: block;
+	// 		width: 100%;
+	// 		padding: 1.3rem 1.8rem;
+	// 		font-family: inherit;
+	// 		border: 1px solid rgba(#707070, 0.3);
+	// 		border-radius: 1.8rem;
+	// 		font-size: 0.8rem;
+	// 		line-height: 1.2;
+	// 		font-weight: 300;
+	// 		transition: border-color 0.2s linear;
+	// 		&::placeholder {
+	// 			color: $black;
+	// 		}
+	// 		&:focus {
+	// 			outline: none;
+	// 			border-color: #000;
+	// 			&::placeholder {
+	// 				color: $black;
+	// 			}
+	// 		}
+	// 		&:valid {
+	// 			border-color: green;
+	// 		}
+	// 		&:invalid {
+	// 			border-color: red;
+	// 		}
+	// 		&:not(:focus):invalid {
+	// 			border-color: red;
+	// 		}
+	// 		@media ($tablet) {
+	// 			width: 360px;
+	// 			margin: 0 auto;
+	// 		}
+	// 		@media ($mobile-sm) {
+	// 			max-width: 100%;
+	// 		}
+	// 	}
+	// 	&__textarea {
+	// 		height: 200px;
+	// 		resize: none;
+	// 	}
+	// .btn {
+	// 	@include btn;
+	// 	margin-top: 30px;
+	// 	@media ($mobile) {
+	// 		width: 30%;
+	// 	}
+	// }
+	// }
+
+	form > div {
+		position: relative;
+		background: #ccc;
+		border-bottom: 0.06rem solid #000;
+	}
+
+	form > div > label {
+		// opacity: 0.3;
+		position: absolute;
+		top: 1.46rem;
+		left: 1.33rem;
+	}
+
+	form > div > input[type='text'],
+	form > div > input[type='email'] {
+		width: 100%;
+		border: 0;
+		padding: 1.33rem 1.33rem 1.33rem 3.33rem;
+		background: white;
+	}
+
+	form > div > input[type='text']:focus,
+	form > div > input[type='email']:focus {
+		outline: 0;
+		background: #ccc;
+	}
+
+	form > div > input[type='text']:focus + label,
+	form > div > input[type='email']:focus + label {
+		opacity: 0;
+	}
+
+	form > div > input[type='text']:valid,
+	form > div > input[type='email']:valid {
+		background: url('@img/icons/icons.svg#checked');
+		background-color: rgb(0, 255, 0, 0.2);
+		background-size: 1.33rem;
+		background-repeat: no-repeat;
+		background-position: 1.33rem 1.33rem;
+	}
+
+	form > div > input[type='text']:valid + label,
+	form > div > input[type='email']:valid + label {
+		opacity: 0;
+	}
+
+	form > div > input[type='text']:invalid:not(:focus):not(:placeholder-shown),
+	form > div > input[type='email']:invalid:not(:focus):not(:placeholder-shown) {
+		background: url('@img/icons/icons.svg#error');
+		background-color: rgb(255, 0, 0, 0.2);
+		background-size: 1.33rem;
+		background-repeat: no-repeat;
+		background-position: 1.33rem 1.33rem;
+	}
+
+	form
+		> div
+		> input[type='text']:invalid:not(:focus):not(:placeholder-shown)
+		+ label,
+	form
+		> div
+		> input[type='email']:invalid:not(:focus):not(:placeholder-shown)
+		+ label {
+		opacity: 0;
+	}
+
+	form
+		> div
+		> input[type='text']:invalid:not(:focus):not(:placeholder-shown)
+		~ .requirements
+		form
+		> div
+		> input[type='email']:invalid:not(:focus):not(:placeholder-shown)
+		~ .requirements {
+		max-height: 13.33rem;
+		padding: 0 2rem 1.33rem 3.33rem;
+	}
+
+	form > div .requirements {
+		padding: 0 2rem 0 3.33rem;
+		color: #ccc;
+		max-height: 0;
+		transition: 0.28s;
+		overflow: hidden;
+		color: red;
+		font-weight: 700;
+		font-style: italic;
+	}
+
+	.btn {
+		@include btn;
+		margin-top: 2rem;
+		@media ($mobile) {
+			width: 30%;
 		}
 	}
+
+	.reset {
+		margin: 30px 0 0 9px !important;
+	}
+}
+
+//My settings
+form textarea,
+form input,
+form label {
+	font-family: inherit;
+	color: $black;
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+form textarea {
+	display: block;
+	width: 100%;
+	border-left: none;
+	padding: 1.3rem 1.33rem;
+	resize: none;
+	height: 13rem;
+	&:focus {
+		outline: none;
+	}
+}
+
+form > div > textarea:focus,
+form > div > textarea:focus {
+	background-color: #ccc;
+}
+
+form textarea:focus::placeholder {
+	opacity: 0;
 }

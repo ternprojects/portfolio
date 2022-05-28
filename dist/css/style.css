@@ -571,6 +571,7 @@ p {
 .works .portfolio .work:hover {
   -webkit-box-shadow: 0 0 25px;
           box-shadow: 0 0 25px;
+  cursor: pointer;
 }
 
 .works .portfolio .work__image {
@@ -1707,103 +1708,118 @@ p {
   margin-right: 0.75rem;
 }
 
-.contact .form__group {
-  margin-bottom: 1.8rem;
+.contact form > div {
+  position: relative;
+  background: #ccc;
+  border-bottom: 0.06rem solid #000;
 }
 
-.contact .form__label {
-  display: inline-block;
-  margin-bottom: 0.6rem;
-  font-size: 0.8rem;
-  color: #2b2a2c;
-  font-weight: 700;
+.contact form > div > label {
+  position: absolute;
+  top: 1.46rem;
+  left: 1.33rem;
 }
 
-.contact .form__input,
-.contact .form__textarea {
-  display: block;
+.contact form > div > input[type=text],
+.contact form > div > input[type=email] {
   width: 100%;
-  padding: 1.3rem 1.8rem;
-  font-family: inherit;
-  border: 1px solid rgba(112, 112, 112, 0.3);
-  border-radius: 1.8rem;
-  font-size: 0.8rem;
-  line-height: 1.2;
-  font-weight: 300;
-  -webkit-transition: border-color 0.2s linear;
-  -o-transition: border-color 0.2s linear;
-  transition: border-color 0.2s linear;
+  border: 0;
+  padding: 1.33rem 1.33rem 1.33rem 3.33rem;
+  background: white;
 }
 
-.contact .form__input::-webkit-input-placeholder, .contact .form__textarea::-webkit-input-placeholder {
-  color: #2b2a2c;
+.contact form > div > input[type=text]:focus,
+.contact form > div > input[type=email]:focus {
+  outline: 0;
+  background: #ccc;
 }
 
-.contact .form__input::-moz-placeholder, .contact .form__textarea::-moz-placeholder {
-  color: #2b2a2c;
+.contact form > div > input[type=text]:focus + label,
+.contact form > div > input[type=email]:focus + label {
+  opacity: 0;
 }
 
-.contact .form__input:-ms-input-placeholder, .contact .form__textarea:-ms-input-placeholder {
-  color: #2b2a2c;
+.contact form > div > input[type=text]:valid,
+.contact form > div > input[type=email]:valid {
+  background: url("../img/icons/icons.svg#checked");
+  background-color: rgba(0, 255, 0, 0.2);
+  background-size: 1.33rem;
+  background-repeat: no-repeat;
+  background-position: 1.33rem 1.33rem;
 }
 
-.contact .form__input::-ms-input-placeholder, .contact .form__textarea::-ms-input-placeholder {
-  color: #2b2a2c;
+.contact form > div > input[type=text]:valid + label,
+.contact form > div > input[type=email]:valid + label {
+  opacity: 0;
 }
 
-.contact .form__input::placeholder,
-.contact .form__textarea::placeholder {
-  color: #2b2a2c;
+.contact form > div > input[type=text]:invalid:not(:focus):not(:-moz-placeholder-shown), .contact form > div > input[type=email]:invalid:not(:focus):not(:-moz-placeholder-shown) {
+  background: url("../img/icons/icons.svg#error");
+  background-color: rgba(255, 0, 0, 0.2);
+  background-size: 1.33rem;
+  background-repeat: no-repeat;
+  background-position: 1.33rem 1.33rem;
 }
 
-.contact .form__input:focus,
-.contact .form__textarea:focus {
-  outline: none;
-  border-color: #000;
+.contact form > div > input[type=text]:invalid:not(:focus):not(:-ms-input-placeholder), .contact form > div > input[type=email]:invalid:not(:focus):not(:-ms-input-placeholder) {
+  background: url("../img/icons/icons.svg#error");
+  background-color: rgba(255, 0, 0, 0.2);
+  background-size: 1.33rem;
+  background-repeat: no-repeat;
+  background-position: 1.33rem 1.33rem;
 }
 
-.contact .form__input:focus::-webkit-input-placeholder, .contact .form__textarea:focus::-webkit-input-placeholder {
-  color: #2b2a2c;
+.contact form > div > input[type=text]:invalid:not(:focus):not(:placeholder-shown),
+.contact form > div > input[type=email]:invalid:not(:focus):not(:placeholder-shown) {
+  background: url("../img/icons/icons.svg#error");
+  background-color: rgba(255, 0, 0, 0.2);
+  background-size: 1.33rem;
+  background-repeat: no-repeat;
+  background-position: 1.33rem 1.33rem;
 }
 
-.contact .form__input:focus::-moz-placeholder, .contact .form__textarea:focus::-moz-placeholder {
-  color: #2b2a2c;
+.contact form > div > input[type=text]:invalid:not(:focus):not(:-moz-placeholder-shown) + label, .contact form > div > input[type=email]:invalid:not(:focus):not(:-moz-placeholder-shown) + label {
+  opacity: 0;
 }
 
-.contact .form__input:focus:-ms-input-placeholder, .contact .form__textarea:focus:-ms-input-placeholder {
-  color: #2b2a2c;
+.contact form > div > input[type=text]:invalid:not(:focus):not(:-ms-input-placeholder) + label, .contact form > div > input[type=email]:invalid:not(:focus):not(:-ms-input-placeholder) + label {
+  opacity: 0;
 }
 
-.contact .form__input:focus::-ms-input-placeholder, .contact .form__textarea:focus::-ms-input-placeholder {
-  color: #2b2a2c;
+.contact form > div > input[type=text]:invalid:not(:focus):not(:placeholder-shown) + label,
+.contact form > div > input[type=email]:invalid:not(:focus):not(:placeholder-shown) + label {
+  opacity: 0;
 }
 
-.contact .form__input:focus::placeholder,
-.contact .form__textarea:focus::placeholder {
-  color: #2b2a2c;
+.contact form > div > input[type=text]:invalid:not(:focus):not(:-moz-placeholder-shown) ~ .requirements form > div > input[type=email]:invalid:not(:focus):not(:-moz-placeholder-shown) ~ .requirements {
+  max-height: 13.33rem;
+  padding: 0 2rem 1.33rem 3.33rem;
 }
 
-.contact .form__input:valid,
-.contact .form__textarea:valid {
-  border-color: green;
+.contact form > div > input[type=text]:invalid:not(:focus):not(:-ms-input-placeholder) ~ .requirements form > div > input[type=email]:invalid:not(:focus):not(:-ms-input-placeholder) ~ .requirements {
+  max-height: 13.33rem;
+  padding: 0 2rem 1.33rem 3.33rem;
 }
 
-.contact .form__input:invalid,
-.contact .form__textarea:invalid {
-  border-color: red;
+.contact form > div > input[type=text]:invalid:not(:focus):not(:placeholder-shown) ~ .requirements form > div > input[type=email]:invalid:not(:focus):not(:placeholder-shown) ~ .requirements {
+  max-height: 13.33rem;
+  padding: 0 2rem 1.33rem 3.33rem;
 }
 
-.contact .form__input:not(:focus):invalid,
-.contact .form__textarea:not(:focus):invalid {
-  border-color: red;
+.contact form > div .requirements {
+  padding: 0 2rem 0 3.33rem;
+  color: #ccc;
+  max-height: 0;
+  -webkit-transition: 0.28s;
+  -o-transition: 0.28s;
+  transition: 0.28s;
+  overflow: hidden;
+  color: red;
+  font-weight: 700;
+  font-style: italic;
 }
 
-.contact .form__textarea {
-  height: 200px;
-  resize: none;
-}
-
-.contact .form .btn {
+.contact .btn {
   display: inline-block;
   vertical-align: top;
   padding: 1.1rem 1.8rem;
@@ -1822,18 +1838,70 @@ p {
   -o-transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
   transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
   transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear, -webkit-box-shadow 0.2s linear;
+  margin-top: 2rem;
 }
 
-.contact .form .btn:focus {
+.contact .btn:focus {
   outline: none;
 }
 
-.contact .form .btn:hover {
+.contact .btn:hover {
   background-color: #2b2a2c;
   color: #fff;
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.24);
   border-color: #2b2a2c;
+}
+
+.contact .reset {
+  margin: 30px 0 0 9px !important;
+}
+
+form textarea,
+form input,
+form label {
+  font-family: inherit;
+  color: #2b2a2c;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+form textarea {
+  display: block;
+  width: 100%;
+  border-left: none;
+  padding: 1.3rem 1.33rem;
+  resize: none;
+  height: 13rem;
+}
+
+form textarea:focus {
+  outline: none;
+}
+
+form > div > textarea:focus,
+form > div > textarea:focus {
+  background-color: #ccc;
+}
+
+form textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+form textarea:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+form textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+form textarea:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+form textarea:focus::placeholder {
+  opacity: 0;
 }
 
 @media (min-width: 767px) {
@@ -2006,12 +2074,6 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-
-  .contact .form__input,
-  .contact .form__textarea {
-    width: 360px;
-    margin: 0 auto;
   }
 }
 
@@ -2283,7 +2345,7 @@ p {
     font-size: 1.5rem;
   }
 
-  .contact .form .btn {
+  .contact .btn {
     width: 30%;
   }
 }
@@ -2473,11 +2535,6 @@ p {
 
   .modal__title {
     font-size: 2rem;
-  }
-
-  .contact .form__input,
-  .contact .form__textarea {
-    max-width: 100%;
   }
 }
 

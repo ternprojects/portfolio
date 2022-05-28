@@ -17,21 +17,53 @@
 						ternxstyle@gmail.com
 					</li>
 				</ul>
-				<form class="form" action="/" method="post">
+				<!-- <form class="form" action="/" method="post">
 
 					<div class="form__group">
-						<label class="form__label" for="input-email">Adress e-mail</label>
-						<input class="form__input" name="input-email" type="email" id="input-email" placeholder="Adress e-mail" required minlength="5"
-							title="Адрес почты должен состоять из логина и домена, также включать символ '@', например: 'login@mail.com'">
+						<label class="form__label" for="input-email">Enter your adress e-mail</label>
+						<input class="form__input" name="input-email" type="email" id="input-email" placeholder="Your adress e-mail" required minlength="5" maxlength="100">
 					</div>
 
 					<div class="form__group">
-						<label class="form__label" for="input-text">Request</label>
-						<textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..." required minlength="2" maxlength="1000" pattern="[a-zA-Z]+"
-							title="Сообщение может содержать от 2 до 1000 символов"></textarea>
+						<label class="form__label" for="input-text">Enter your name</label>
+						<input class="form__input" name="input-name" type="text" id="input-name" placeholder="Your name" required minlength="2" maxlength="100">
 					</div>
+
+					<div class="form__group">
+						<label class="form__label" for="input-text">Type your message</label>
+						<textarea class="form__textarea" name="input-text" id="input-text" placeholder="Your message..." required minlength="2" maxlength="1000"></textarea>
+					</div>
+
 					<button class="btn" type="submit">Send</button>
+				</form> -->
+
+				<form action="mail.php" method="post">
+
+					<div>
+						<input required type="text" id="name" name="name" placeholder=" " minlength="2" maxlength="50" title="Имя должно содержать от 2-х до 5-ти символов">
+						<label for="name">Name</label>
+					</div>
+
+					<div>
+						<input required type="email" id="email" name="email" placeholder=" " pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
+							title="Адреc электронной посты должен иметь символ '@', пример: login@mail.com">
+						<label for="email">Email address</label>
+						<div class="requirements">
+							Must be a valid email address
+						</div>
+					</div>
+
+					<div>
+						<label for="input_text"></label>
+						<textarea name="input_text" id="input_text" placeholder="Your message..." required minlength="2" maxlength="1000" title="Сообщение должно состоять от 2-х до 1000 символов"></textarea>
+					</div>
+
+					<button class="btn" type="submit" value="Send">Send</button>
+
+					<button class="btn reset" type="reset" value="Clear form">Clear form</button>
+
 				</form>
+
 			</div>
 		</div>
 		<!--./contact-->
