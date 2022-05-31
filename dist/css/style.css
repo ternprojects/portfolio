@@ -208,6 +208,16 @@ p {
   }
 }
 
+.progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 5px;
+  background-color: tomato;
+  z-index: 1000;
+}
+
 .accordeon {
   margin: 25px 0 25px 0;
   border: 1px solid transparent;
@@ -1128,7 +1138,7 @@ p {
   text-align: center;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 80.5%;
   z-index: 1;
 }
 .news .articles__photo {
