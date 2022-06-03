@@ -10,7 +10,7 @@
 			padding-bottom: 3rem;
 		}
 		@media ($mobile) {
-			margin-top: 100px;
+			margin-top: 80px;
 			padding-bottom: 1rem;
 		}
 		// @media ($tablet) {
@@ -140,4 +140,11 @@
 			margin-top: 0;
 		}
 	}
+}
+
+//My settings
+.swiper h5 {
+	text-align: center;
+	margin: 0;
+	text-transform: uppercase;
 }

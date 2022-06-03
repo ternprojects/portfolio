@@ -15,7 +15,7 @@ export function readMore1() {
 }
 
 btn1.onclick = readMore1
-
+/*============================================*/
 export function readMore2() {
 	let dots2 = document.getElementById('dots2')
 	let more2 = document.getElementById('more2')
@@ -33,7 +33,7 @@ export function readMore2() {
 }
 
 btn2.onclick = readMore2
-
+/*============================================*/
 export function readMore3() {
 	let dots3 = document.getElementById('dots3')
 	let more3 = document.getElementById('more3')
@@ -51,7 +51,7 @@ export function readMore3() {
 }
 
 btn3.onclick = readMore3
-
+/*============================================*/
 export function readMore4() {
 	let dots4 = document.getElementById('dots4')
 	let more4 = document.getElementById('more4')
@@ -69,7 +69,7 @@ export function readMore4() {
 }
 
 btn4.onclick = readMore4
-
+/*============================================*/
 export function readMore5() {
 	let dots5 = document.getElementById('dots5')
 	let more5 = document.getElementById('more5')
@@ -87,7 +87,7 @@ export function readMore5() {
 }
 
 btn5.onclick = readMore5
-
+/*============================================*/
 export function readMore6() {
 	let dots6 = document.getElementById('dots6')
 	let more6 = document.getElementById('more6')
@@ -105,7 +105,7 @@ export function readMore6() {
 }
 
 btn6.onclick = readMore6
-
+/*============================================*/
 export function readMore7() {
 	let dots7 = document.getElementById('dots7')
 	let more7 = document.getElementById('more7')
@@ -123,7 +123,43 @@ export function readMore7() {
 }
 
 btn7.onclick = readMore7
+/*============================================*/
+// export function readMore8() {
+// 	let dots8 = document.getElementById('dots8')
+// 	let more8 = document.getElementById('more8')
+// 	let btn8 = document.getElementById('btn8')
 
+// 	if (dots8.style.display === 'none') {
+// 		dots8.style.display = 'inline'
+// 		btn8.innerHTML = 'Read More'
+// 		more8.style.display = 'none'
+// 	} else {
+// 		dots8.style.display = 'none'
+// 		btn8.innerHTML = 'Hide'
+// 		more8.style.display = 'inline'
+// 	}
+// }
+
+// btn8.onclick = readMore8
+/*============================================*/
+// export function readMore9() {
+// 	let dots9 = document.getElementById('dots9')
+// 	let more9 = document.getElementById('more9')
+// 	let btn9 = document.getElementById('btn9')
+
+// 	if (dots9.style.display === 'none') {
+// 		dots9.style.display = 'inline'
+// 		btn9.innerHTML = 'Read More'
+// 		more9.style.display = 'none'
+// 	} else {
+// 		dots9.style.display = 'none'
+// 		btn9.innerHTML = 'Hide'
+// 		more9.style.display = 'inline'
+// 	}
+// }
+
+// btn9.onclick = readMore9
+/*============================================*/
 export function readMore() {
 	let dots = document.getElementById('dots')
 	let more = document.getElementById('more')

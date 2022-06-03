@@ -31,8 +31,8 @@
 //Первый Слайдер
 .swiper {
 	width: 500px;
-	height: 310px;
-	margin-top: -25px;
+	// height: 310px;
+	margin-top: -40px;
 	@media ($tablet) {
 		width: 360px;
 		height: 200px;
@@ -47,7 +47,7 @@
 	height: 240px;
 	margin: 0 auto;
 	@media ($tablet) {
-		width: 360px;
+		width: 250px;
 		height: 200px;
 	}
 }
@@ -156,5 +156,8 @@
 	}
 	@media ($mobile-sm) {
 		width: 290px;
+		.swiper-slide img {
+			width: 200px;
+		}
 	}
 }

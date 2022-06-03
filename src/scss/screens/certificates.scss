@@ -3,7 +3,7 @@
 	&__nav {
 		display: flex;
 		justify-content: center;
-		margin-bottom: 1.4rem;
+		margin-bottom: 2rem;
 		@media ($mobile) {
 			flex-wrap: wrap;
 			justify-content: space-around;
@@ -31,13 +31,12 @@
 		}
 	}
 	&__title {
-		margin-top: 2rem;
+		margin: 5rem 0 2rem 0;
 		font-size: 2.5rem;
 		color: $black;
 		font-weight: 700;
 		text-transform: uppercase;
 		text-align: center;
-		margin-bottom: 2rem;
 		@media ($mobile) {
 			font-size: 2rem;
 		}
@@ -112,4 +111,3 @@
 .invisible {
 	display: none !important;
 }
-
