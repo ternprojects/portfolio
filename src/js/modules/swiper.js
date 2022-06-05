@@ -126,7 +126,7 @@ new Swiper('.swiper', {
 	//Автовоспроизведение
 	autoplay: {
 		//Пауза между прокрутками
-		delay: 1000,
+		delay: 3000,
 
 		//Закончить на последнес слайде
 		stopOnLastSlide: false,
@@ -238,4 +238,3 @@ new Swiper('.swiper', {
 	// 	minRatio: 1,
 	// },
 })
-
