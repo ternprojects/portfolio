@@ -144,6 +144,12 @@
 
 //Второй слайдер
 #display {
+	h4 {
+		margin-bottom: 0;
+	}
+	.mb {
+	
+	}
 	@media (min-width: 767px) {
 		display: none;
 	}
@@ -151,11 +157,13 @@
 		display: block;
 		margin-top: 20px;
 	}
-	h4 {
-		margin-bottom: 35px;
-	}
 	@media ($mobile-sm) {
 		width: 290px;
+		//Стрелки
+		.swiper-button-prev::after,
+		.swiper-button-next::after {
+			margin-bottom: 10px;
+		}
 		.swiper-slide img {
 			width: 200px;
 		}

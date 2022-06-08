@@ -1509,6 +1509,9 @@ p {
   width: auto;
 }
 
+#display h4 {
+  margin-bottom: 0;
+}
 @media (min-width: 767px) {
   #display {
     display: none;
@@ -1520,12 +1523,13 @@ p {
     margin-top: 20px;
   }
 }
-#display h4 {
-  margin-bottom: 35px;
-}
 @media (max-width: 565px) {
   #display {
     width: 290px;
+  }
+  #display .swiper-button-prev::after,
+#display .swiper-button-next::after {
+    margin-bottom: 10px;
   }
   #display .swiper-slide img {
     width: 200px;
