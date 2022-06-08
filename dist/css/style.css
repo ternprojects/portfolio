@@ -1509,8 +1509,8 @@ p {
   width: auto;
 }
 
-#display h4 {
-  margin-bottom: 0;
+#display .swiper-pagination {
+  margin-bottom: 10px;
 }
 @media (min-width: 767px) {
   #display {
