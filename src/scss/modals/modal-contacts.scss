@@ -215,12 +215,9 @@
 
 	.btn {
 		@include btn;
-		margin-top: 2rem;
+		margin-top: 2rem !important;
 		@media ($notebook) {
 			width: 30%;
-		}
-		@media ($mobile-sm) {
-
 		}
 	}
 	//My settings

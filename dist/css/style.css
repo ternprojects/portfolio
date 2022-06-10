@@ -1817,8 +1817,8 @@ p {
   }
 }
 @media (max-width: 565px) {
-  .modal .btn:not(:last-child) {
-    margin-bottom: 20px;
+  .modal .btn {
+    margin-top: 20px;
   }
   .modal .btn:last-child {
     margin-left: 0;
@@ -2071,7 +2071,7 @@ p {
   text-transform: uppercase;
   text-align: center;
   transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 .contact .btn:focus {
   outline: none;
