@@ -12,9 +12,9 @@
 		}
 	}
 	&__title {
-		text-align: left;
+		// text-align: left;
 		@media ($mobile-sm) {
-			font-size: 2rem;
+			font-size: 2rem !important;
 		}
 	}
 	&__subtitle {
@@ -216,11 +216,13 @@
 	.btn {
 		@include btn;
 		margin-top: 2rem;
-		@media ($mobile) {
+		@media ($notebook) {
 			width: 30%;
 		}
-	}
+		@media ($mobile-sm) {
 
+		}
+	}
 	//My settings
 	.reset {
 		margin: 30px 0 0 9px !important;
