@@ -1816,9 +1816,6 @@ p {
   .modal .btn:not(:last-child) {
     margin-bottom: 20px;
   }
-  .modal .btn:last-child {
-    margin-left: 0;
-  }
 }
 .modal .timeline {
   display: flex;
