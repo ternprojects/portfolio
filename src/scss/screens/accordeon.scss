@@ -19,7 +19,7 @@
 		background-color: $gray-light;
 		color: #fff;
 		border: 1px solid #ccc;
-		font-size: 1.1rem;
+		font-size: 1.16rem;
 		&::before {
 			content: '';
 			display: inline-block;
@@ -48,7 +48,7 @@
 		padding: 10px;
 		background-color: #ccc;
 		color: $gray;
-		font-size: 0.9rem;
+		font-size: 1.1rem;
 		line-height: 1.4;
 		&_active {
 			display: block;

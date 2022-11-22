@@ -160,6 +160,7 @@ btn7.onclick = readMore7
 
 // btn9.onclick = readMore9
 /*============================================*/
+//Button "See more projects"
 export function readMore() {
 	let dots = document.getElementById('dots')
 	let more = document.getElementById('more')

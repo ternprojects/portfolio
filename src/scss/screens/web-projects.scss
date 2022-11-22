@@ -1,10 +1,10 @@
 .news {
-	margin: 10rem 0 8rem 0;
+	margin: 0rem 0 8rem 0;
 	@media ($tablet) {
-		margin: 10rem 0 5rem 0;
+		margin-bottom: 5rem;
 	}
 	&__header {
-		margin-bottom: 3.6rem;
+		margin-bottom: 3rem;
 		text-align: center;
 	}
 	&__title {

@@ -13,6 +13,7 @@ import './modules/accordeon.js'
 import './modules/filter.js'
 import './modules/read-more.js'
 import './modules/swiper.js'
+// import './modules/data-qa.js'
 import './modules/progressbar.js'
 
 $(function () {
