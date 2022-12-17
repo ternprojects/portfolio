@@ -1,0 +1,82 @@
+.news-1 {
+	margin: 10rem 0 5rem 0 !important;
+}
+
+//QA-Info
+.qa-info {
+	max-width: 100%;
+	margin: 20px auto;
+	&-margin {
+		margin: 0;
+		font-size: 1.16rem;
+		font-weight: 400 !important;
+	}
+	&-item {
+		border: 2px solid #000;
+		background: #8d8d8e;
+		border-radius: 10px;
+		margin-bottom: 5px;
+		color: white;
+	}
+	&-title {
+		display: block;
+		cursor: pointer;
+		padding: 10px 15px;
+		position: relative;
+		transition: background 0.3s ease-out;
+		border-radius: 10px;
+
+		&:after {
+			content: '';
+			display: block;
+			border-style: solid;
+			border-width: 8px 5px 0 5px;
+			border-color: #ccc transparent transparent transparent;
+			position: absolute;
+			top: 50%;
+			right: 15px;
+			transform: translateY(-50%);
+		}
+		&:hover {
+			background: #6a696b;
+			border-radius: 10px;
+			color: white;
+		}
+	}
+	&-input {
+		width: 0;
+		height: 0;
+		appearance: none;
+		position: absolute;
+	}
+	&-text {
+		display: none;
+		padding: 10px 15px;
+		//My settings
+		font-size: 1.1rem;
+		line-height: 1.4;
+		& p {
+			margin: 0;
+		}
+		& a {
+			text-decoration: none;
+			color: inherit;
+			text-decoration: underline;
+		}
+	}
+
+	&-input:checked ~ &-title {
+		background-color: #6a696b;
+		border-radius: 10px 10px 0 0;
+	}
+
+	&-input:checked ~ &-title:after {
+		border-style: solid;
+		border-width: 0 5px 8px 5px;
+		border-color: transparent transparent #fff transparent;
+	}
+
+	&-input:checked ~ &-text {
+		display: block;
+	}
+}
